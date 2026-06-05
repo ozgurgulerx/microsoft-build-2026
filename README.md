@@ -8,6 +8,8 @@ Last refreshed: 2026-06-05.
 
 Static page: [index.html](index.html)
 
+![Microsoft Build 2026 AI update classification](docs/assets/ai-update-classification.svg)
+
 ## Opening Map
 
 The repo is organized around the practical builder path:
