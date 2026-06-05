@@ -1,4 +1,10 @@
-private/
+# Private/local Build 2026 reference context - never sync
+/private/
+/private/**
+/reference/
+/references/
+/local-context/
+/context/
 
 # Local configuration and secrets
 .env
@@ -24,8 +30,9 @@ Thumbs.db
 ~$*.docx
 ~$*.xlsx
 *.pptx
+*.pptm
 *.ppt
+*.ppsx
 *.docx
 *.xlsx
 *.pdf
-
