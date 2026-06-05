@@ -1,0 +1,31 @@
+private/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Dependency and build output
+node_modules/
+.venv/
+venv/
+dist/
+build/
+.next/
+coverage/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.log
+
+# Office lock files and local binary references
+~$*.pptx
+~$*.docx
+~$*.xlsx
+*.pptx
+*.ppt
+*.docx
+*.xlsx
+*.pdf
+
