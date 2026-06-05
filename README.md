@@ -39,6 +39,7 @@ Read the Build 2026 AI announcements as a complete builder path: build the backe
 ## Repo Contents
 
 - [docs/announcement-index.md](docs/announcement-index.md): public announcement map with sample opportunities.
+- [docs/build-2026-latest-content-scan.md](docs/build-2026-latest-content-scan.md): latest public Build 2026 content scan.
 - [docs/ai-builder-map.md](docs/ai-builder-map.md): AI-builder capability structure.
 - [docs/repo-operating-model.md](docs/repo-operating-model.md): how to keep public and private material separated.
 - [samples/README.md](samples/README.md): sample backlog and maturity ladder.
@@ -60,15 +61,23 @@ Read the Build 2026 AI announcements as a complete builder path: build the backe
 This repo uses public Microsoft sources as the external source of truth, including:
 
 - Microsoft Build 2026 newsroom: https://news.microsoft.com/build-2026/
+- Microsoft Build 2026 official blog: https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/
 - Microsoft Foundry Build recap: https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-build-2026/
+- Microsoft AI model family: https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/
 - Foundry Agent Service at Build: https://devblogs.microsoft.com/foundry/agent-service-build2026/
 - Foundry IQ Build updates: https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq/
+- Foundry Local Build update: https://devblogs.microsoft.com/foundry/accelerate-edge-ai-development-with-foundry-local/
 - Trust, evals, ASSERT, and ACS: https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/
 - Observability and ROI: https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework/
+- Fabric, Rayfin, HorizonDB, and databases: https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/
+- Azure Cobalt 200: https://azure.microsoft.com/en-us/blog/new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for-modern-agentic-ai-workloads/
+- Windows developer and agent runtime updates: https://blogs.windows.com/windowsdeveloper/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/
+- GitHub Copilot app: https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/
 - Azure Functions Build update: https://techcommunity.microsoft.com/blog/appsonazureblog/azure-functions-at-build-2026-update/4524075
 - Azure Container Apps dynamic sessions: https://learn.microsoft.com/azure/container-apps/sessions
 - Cosmos DB Build announcements: https://devblogs.microsoft.com/cosmosdb/announced-at-ms-build-2026-azure-cosmos-db-mcp-toolkit-semantic-reranking-global-secondary-indexes-and-more/
 - Work IQ for agents: https://devblogs.microsoft.com/microsoft365dev/work-iq-production-ready-intelligence-for-every-agent/
+- Microsoft Discovery: https://azure.microsoft.com/en-us/blog/announcing-microsoft-discovery-general-availability-and-microsoft-discovery-app-preview/
 
 ## Private Local Context
 
