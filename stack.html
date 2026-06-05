@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Stack · Build 2026 AI Builder Atlas</title>
+    <meta
+      name="description"
+      content="The Build 2026 AI builder stack, layer by layer: model, context, tools, harness, and the platform planes that run them."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-field" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="masthead" aria-label="Site header">
+      <a class="repo-tag" href="index.html">
+        <span class="bm-mini" aria-hidden="true">BUILD</span>
+        <span class="path">microsoft&#8203;-build-2026</span>
+      </a>
+      <nav class="mast-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="stack.html" aria-current="page">Stack</a>
+        <a href="samples.html">Samples</a>
+        <a href="sources.html">Sources</a>
+      </nav>
+      <span class="mast-stamp">REFRESHED&nbsp;2026.06.05</span>
+    </header>
+
+    <main>
+      <!-- page header -->
+      <section class="page-head" aria-labelledby="ph-title">
+        <p class="kicker reveal" data-d="0">
+          <span class="kicker-mark">◈</span> 01 / The Stack
+        </p>
+        <h1 id="ph-title" class="reveal" data-d="1">
+          Seven planes, one assembly line
+        </h1>
+        <p class="lede reveal" data-d="2">
+          The atlas reads top to bottom. Two platform bands sit above the four
+          core layers, one sits below. Each block answers a single builder
+          question and carries its own slice of the Build 2026 announcements.
+        </p>
+        <nav class="layer-jump reveal" data-d="3" aria-label="Jump to layer">
+          <a href="#control">Control</a>
+          <a href="#build">Build</a>
+          <a href="#model">Model</a>
+          <a href="#context">Context</a>
+          <a href="#tools">Tools</a>
+          <a href="#harness">Harness</a>
+          <a href="#metal">Metal</a>
+        </nav>
+      </section>
+
+      <!-- the layer stack -->
+      <section class="layer-stack" aria-label="Layers">
+        <!-- CONTROL -->
+        <article class="layer-row plane-gov reveal-up" id="control">
+          <div class="layer-tag">
+            <span class="layer-plane">CONTROL PLANE</span>
+            <span class="layer-idx">⛒</span>
+          </div>
+          <div class="layer-main">
+            <h2>Productionisation &amp; Governance</h2>
+            <p class="layer-ask">
+              Can this agent be trusted near real users and enterprise data?
+            </p>
+            <p class="layer-note">
+              The controls you wrap around an agent before it ships: identity,
+              session state, evaluation, observability, and ROI. This is what
+              turns a demo into something an enterprise will actually run.
+            </p>
+            <ul class="chiplist">
+              <li>Runtime / session state</li>
+              <li>Agent Service hosted agents</li>
+              <li>Azure Functions serverless agents</li>
+              <li>Container Apps sandboxes</li>
+              <li>Agent Identity</li>
+              <li>ACS</li>
+              <li>ASSERT</li>
+              <li>Rubric</li>
+              <li>Evals / Tracing</li>
+              <li>Observability</li>
+              <li>ROI</li>
+              <li>Agent 365</li>
+              <li>Purview / Defender / Entra</li>
+              <li>Agent distribution</li>
+              <li>Windows agent containment</li>
+              <li>Discovery evidence loops</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- BUILD -->
+        <article class="layer-row plane-dev reveal-up" id="build">
+          <div class="layer-tag">
+            <span class="layer-plane">BUILD PLANE</span>
+            <span class="layer-idx">⌗</span>
+          </div>
+          <div class="layer-main">
+            <h2>Dev / Backend Builder Substrate</h2>
+            <p class="layer-ask">What do I actually build the sample with?</p>
+            <p class="layer-note">
+              The frameworks, SDKs, local loops, and MCP surfaces that turn an
+              announcement into working code. This plane is where this repo
+              lives.
+            </p>
+            <ul class="chiplist">
+              <li>Agent Framework</li>
+              <li>Foundry Toolkit for VS Code</li>
+              <li>Azure Functions agents / MCP</li>
+              <li>Rayfin</li>
+              <li>HorizonDB</li>
+              <li>Cosmos DB MCP</li>
+              <li>ACA samples</li>
+              <li>GitHub SDKs / sandboxes</li>
+              <li>GitHub Copilot app</li>
+              <li>Rayfin CLI</li>
+              <li>Visual Studio AI loop</li>
+              <li>Windows AI dev loop</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- MODEL -->
+        <article class="layer-row core-row row-model reveal-up" id="model">
+          <div class="layer-tag">
+            <span class="layer-idx big">1</span>
+            <span class="layer-plane">MODEL</span>
+          </div>
+          <div class="layer-main">
+            <h2>Model</h2>
+            <p class="layer-ask">What intelligence do I use?</p>
+            <p class="layer-note">
+              The reasoning core, and how you source and adapt it — frontier
+              hosted models, third-party catalogs, managed compute, fine-tuning,
+              and local inference.
+            </p>
+            <ul class="chiplist">
+              <li>MAI models</li>
+              <li>Fireworks AI on Foundry</li>
+              <li>Managed Compute</li>
+              <li>Frontier Tuning</li>
+              <li>Foundry Local inference</li>
+              <li>Foundry Local on Azure Local</li>
+              <li>Model router</li>
+              <li>Task-specialized MAI family</li>
+              <li>NVIDIA / Anyscale placement</li>
+            </ul>
+            <p class="layer-sample">
+              Sample touchpoint —
+              <a href="samples.html#track-06"
+                >Model router and inference substrate</a
+              >
+            </p>
+          </div>
+        </article>
+
+        <!-- CONTEXT -->
+        <article class="layer-row core-row row-context reveal-up" id="context">
+          <div class="layer-tag">
+            <span class="layer-idx big">2</span>
+            <span class="layer-plane">CONTEXT</span>
+          </div>
+          <div class="layer-main">
+            <h2>Context</h2>
+            <p class="layer-ask">What does the agent know?</p>
+            <p class="layer-note">
+              The grounding layer — enterprise, operational, and web knowledge
+              brought to the model through retrieval, graphs, ontologies, and
+              memory.
+            </p>
+            <ul class="chiplist">
+              <li>Foundry IQ</li>
+              <li>Web IQ</li>
+              <li>Microsoft IQ</li>
+              <li>Scout</li>
+              <li>Work IQ</li>
+              <li>Fabric IQ</li>
+              <li>HorizonDB operational data</li>
+              <li>Rayfin app context</li>
+              <li>Knowledge bases</li>
+              <li>Agentic retrieval</li>
+              <li>Graph / ontology / semantic context</li>
+              <li>Content Understanding</li>
+              <li>Service memory</li>
+            </ul>
+            <p class="layer-sample">
+              Sample touchpoint —
+              <a href="samples.html#track-02">Foundry IQ grounding</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- TOOLS -->
+        <article class="layer-row core-row row-tools reveal-up" id="tools">
+          <div class="layer-tag">
+            <span class="layer-idx big">3</span>
+            <span class="layer-plane">TOOLS</span>
+          </div>
+          <div class="layer-main">
+            <h2>Tools</h2>
+            <p class="layer-ask">What can the agent do?</p>
+            <p class="layer-note">
+              The action surface — safe, governed ways to call functions, run
+              code, search tools, and reach the outside world, mostly through
+              MCP.
+            </p>
+            <ul class="chiplist">
+              <li>Foundry Toolboxes</li>
+              <li>Tool Search</li>
+              <li>Skills</li>
+              <li>MCP</li>
+              <li>Azure Functions MCP</li>
+              <li>Code Interpreter</li>
+              <li>Voice Live</li>
+              <li>Routines</li>
+              <li>Publishing routes</li>
+              <li>Rayfin backend generation</li>
+              <li>Copilot worktree orchestration</li>
+              <li>Windows MXC skills</li>
+            </ul>
+            <p class="layer-sample">
+              Sample touchpoint —
+              <a href="samples.html#track-01">Agent Framework + Toolbox</a>,
+              <a href="samples.html#track-10">Copilot workflow</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- HARNESS -->
+        <article class="layer-row core-row row-harness reveal-up" id="harness">
+          <div class="layer-tag">
+            <span class="layer-idx big">4</span>
+            <span class="layer-plane">HARNESS</span>
+          </div>
+          <div class="layer-main">
+            <h2>Harness</h2>
+            <p class="layer-ask">How does it run safely in production?</p>
+            <p class="layer-note">
+              The runtime wrapper that gives the agent identity, state,
+              traceability, evaluation, and lifecycle controls — the bridge to
+              the control plane.
+            </p>
+            <ul class="chiplist">
+              <li>Agent Framework</li>
+              <li>Agent Service</li>
+              <li>Identity</li>
+              <li>ACS</li>
+              <li>ASSERT</li>
+              <li>Rubric</li>
+              <li>Tracing / evals</li>
+              <li>Optimizer</li>
+              <li>ROI</li>
+              <li>Agent 365</li>
+              <li>Governed distribution</li>
+              <li>Windows MXC policy</li>
+              <li>Windows 365 Agents</li>
+              <li>Discovery review loop</li>
+            </ul>
+            <p class="layer-sample">
+              Sample touchpoint —
+              <a href="samples.html#track-03">Serverless agent</a>,
+              <a href="samples.html#track-04">Sandbox</a>,
+              <a href="samples.html#track-05">Eval loop</a>,
+              <a href="samples.html#track-09">Windows local-agent harness</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- METAL -->
+        <article class="layer-row plane-infra reveal-up" id="metal">
+          <div class="layer-tag">
+            <span class="layer-plane">METAL PLANE</span>
+            <span class="layer-idx">▦</span>
+          </div>
+          <div class="layer-main">
+            <h2>AI Infrastructure</h2>
+            <p class="layer-ask">Where does the workload actually run?</p>
+            <p class="layer-note">
+              The compute and execution substrate — local, cloud, serverless,
+              sandboxed, and accelerated silicon that make the demos runnable.
+            </p>
+            <ul class="chiplist">
+              <li>Cobalt 200 VMs</li>
+              <li>NVIDIA Vera / Rubin NVL72</li>
+              <li>RTX Spark → DGX Station for Windows</li>
+              <li>Majorana 2 quantum chip</li>
+              <li>Foundry Local</li>
+              <li>Azure Local</li>
+              <li>Managed Compute GPUs</li>
+              <li>Windows AI APIs</li>
+              <li>Surface RTX Spark Dev Box</li>
+              <li>Windows 365 Agents</li>
+              <li>Secure sandbox execution</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="cta-strip" aria-label="Next">
+        <p>Now see how the layers become builds.</p>
+        <a class="btn btn-primary" href="samples.html"
+          >Browse the sample tracks &rarr;</a
+        >
+      </section>
+    </main>
+
+    <footer class="foot">
+      <nav class="foot-links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="stack.html">Stack</a>
+        <a href="samples.html">Samples</a>
+        <a href="sources.html">Sources</a>
+        <a
+          href="https://news.microsoft.com/build-2026/"
+          target="_blank"
+          rel="noopener"
+          >Build 2026 ↗</a
+        >
+      </nav>
+      <p class="foot-sig">
+        microsoft-build-2026 &middot; AI Builder Atlas &middot; built for the
+        builder
+      </p>
+    </footer>
+
+    <script src="atlas.js" defer></script>
+  </body>
+</html>

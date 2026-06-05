@@ -3,122 +3,925 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Microsoft Build 2026 AI Builder Atlas</title>
+    <title>Build 2026 AI Builder Atlas</title>
     <meta
       name="description"
-      content="A public-safe map of Microsoft Build 2026 AI announcements for builders moving from model and context to tools, harness, governance, and infrastructure."
+      content="A public-safe atlas that maps Microsoft Build 2026 AI announcements into builder-ready samples: model, context, tools, harness, and infrastructure."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="page-shell">
-      <section class="atlas-hero" aria-labelledby="page-title">
-        <p class="eyebrow">Opening Map</p>
-        <div class="hero-copy">
-          <h1 id="page-title">Build 2026 AI Builder Atlas</h1>
+    <div class="grid-field" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- ───────────────────────── masthead ───────────────────────── -->
+    <header class="masthead" aria-label="Site header">
+      <a class="repo-tag" href="index.html">
+        <span class="bm-mini" aria-hidden="true">BUILD</span>
+        <span class="path">microsoft&#8203;-build-2026</span>
+      </a>
+      <nav class="mast-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="stack.html">Stack</a>
+        <a href="samples.html">Samples</a>
+        <a href="sources.html">Sources</a>
+      </nav>
+      <span class="mast-stamp">REFRESHED&nbsp;2026.06.05</span>
+    </header>
+
+    <main id="top">
+      <!-- ───────────────────────── hero ───────────────────────── -->
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="kicker reveal" data-d="0">
+          <span class="kicker-mark">◆</span> A personal interpretation of the
+          narrative
+        </p>
+
+        <div class="buildmark reveal" data-d="1" aria-hidden="true">
+          <span class="bm-word">BUILD</span>
+          <span class="bm-year">2026</span>
+        </div>
+
+        <h1 id="hero-title" class="reveal" data-d="2">The AI Builder Atlas</h1>
+
+        <blockquote class="manifesto reveal" data-d="3">
+          “Build 2026 was overwhelming. There was so much innovation it became
+          easy to miss the larger narrative — how all of these pieces actually
+          come together. This page is my own interpretation of that narrative.”
+        </blockquote>
+
+        <p class="lede reveal" data-d="4">
+          One coherent throughline across the announcements: pick your
+          intelligence, ground it, give it tools, run it safely, and place it on
+          the right compute. Five builder layers, eleven sample tracks, one
+          assembly line.
+        </p>
+
+        <div
+          class="hero-stats reveal"
+          data-d="5"
+          aria-label="Atlas at a glance"
+        >
+          <div class="stat">
+            <span class="stat-num">5</span>
+            <span class="stat-label">builder layers</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">11</span>
+            <span class="stat-label">sample tracks</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">25+</span>
+            <span class="stat-label">public sources</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">01</span>
+            <span class="stat-label">target persona — the builder</span>
+          </div>
+        </div>
+
+        <div class="hero-cta reveal" data-d="6">
+          <a class="btn btn-primary" href="stack.html"
+            >Explore the stack &rarr;</a
+          >
+          <a class="btn btn-ghost" href="samples.html"
+            >Browse samples &nearr;</a
+          >
+        </div>
+      </section>
+
+      <!-- ───────────────────── the stack diagram ───────────────────── -->
+      <section class="stack" id="stack" aria-labelledby="stack-title">
+        <div class="section-head">
+          <span class="section-no">01 / THE MAP</span>
+          <h2 id="stack-title">From dev substrate to production harness</h2>
           <p>
-            A working classification for the AI updates announced around Microsoft Build 2026:
-            start with intelligence, ground it, give it tools, run it safely, and operate it on the right infrastructure.
+            One diagram, read top to bottom. The four numbered blocks are the
+            builder assembly line. The bands around them are the platform that
+            makes the line run.
+            <a class="inline-link" href="stack.html"
+              >See the layer-by-layer breakdown &rarr;</a
+            >
           </p>
         </div>
 
-        <article class="classification-slide" aria-labelledby="slide-title">
-          <div class="slide-header">
-            <p class="slide-kicker">AI update classification</p>
-            <h2 id="slide-title">From dev substrate to production harness</h2>
-            <p>
-              Read the announcements as a complete path: build the backend and agent harness,
-              assemble model/context/tools, then operate it safely.
-            </p>
+        <div class="schematic" aria-label="Layered builder architecture">
+          <article class="band band-gov reveal-up">
+            <header>
+              <span class="band-edge">CONTROL PLANE</span>
+              <h3>Productionisation &amp; Governance</h3>
+            </header>
+            <ul class="cap-list band-caps">
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Runtime / session state</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Agent Service hosted agents</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://techcommunity.microsoft.com/blog/appsonazureblog/azure-functions-at-build-2026-update/4524075"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Azure Functions serverless agents</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://learn.microsoft.com/azure/container-apps/sessions"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Container Apps sandboxes</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Agent Identity</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>ACS (Agent Control Spec)</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>ASSERT</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Rubric</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Evals / Tracing</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Observability</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>ROI reporting</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Agent 365</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Purview / Defender / Entra</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://blogs.windows.com/windowsdeveloper/2026/06/02/windows-platform-security-for-ai-agents/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Windows agent containment</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://azure.microsoft.com/en-us/blog/announcing-microsoft-discovery-general-availability-and-microsoft-discovery-app-preview/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Discovery evidence loops</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+            </ul>
+          </article>
+
+          <article class="band band-dev reveal-up">
+            <header>
+              <span class="band-edge">BUILD PLANE</span>
+              <h3>Dev / Backend Builder Substrate</h3>
+            </header>
+            <ul class="cap-list band-caps">
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Agent Framework</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Foundry Toolkit for VS Code</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://techcommunity.microsoft.com/blog/appsonazureblog/azure-functions-at-build-2026-update/4524075"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Azure Functions agents / MCP</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Rayfin</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>HorizonDB</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/cosmosdb/announced-at-ms-build-2026-azure-cosmos-db-mcp-toolkit-semantic-reranking-global-secondary-indexes-and-more/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Cosmos DB MCP</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://learn.microsoft.com/azure/container-apps/sessions"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>ACA samples</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>GitHub SDKs / sandboxes</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Rayfin prompt-to-backend CLI</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://blogs.windows.com/windowsdeveloper/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Windows local agent loop</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+            </ul>
+          </article>
+
+          <div class="core" aria-label="Core builder layers">
+            <article class="cell cell-model reveal-up">
+              <header class="cell-head">
+                <span class="cell-no">1</span>
+                <div>
+                  <h3>Model</h3>
+                  <p class="ask">What intelligence do I use?</p>
+                </div>
+              </header>
+              <ul class="cap-list">
+                <li>
+                  <a
+                    href="https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>MAI model family</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-build-2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Fireworks AI on Foundry</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/announcing-foundry-managed-compute/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Managed Compute</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-build-2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Frontier Tuning</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/accelerate-edge-ai-development-with-foundry-local/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Foundry Local inference</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/accelerate-edge-ai-development-with-foundry-local/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Foundry Local on Azure Local</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/announcing-foundry-managed-compute/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>NVIDIA / Anyscale placement</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+              </ul>
+            </article>
+
+            <article class="cell cell-context reveal-up">
+              <header class="cell-head">
+                <span class="cell-no">2</span>
+                <div>
+                  <h3>Context</h3>
+                  <p class="ask">What does the agent know?</p>
+                </div>
+              </header>
+              <ul class="cap-list">
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Foundry IQ</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Web IQ</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/microsoft365dev/work-iq-production-ready-intelligence-for-every-agent/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Work IQ</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Fabric IQ</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Microsoft IQ + Scout</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>HorizonDB operational data</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Knowledge bases</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Agentic retrieval</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Graph / ontology / semantic context</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-build-2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Content Understanding</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Service memory</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+              </ul>
+            </article>
+
+            <article class="cell cell-tools reveal-up">
+              <header class="cell-head">
+                <span class="cell-no">3</span>
+                <div>
+                  <h3>Tools</h3>
+                  <p class="ask">What can the agent do?</p>
+                </div>
+              </header>
+              <ul class="cap-list">
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Foundry Toolboxes</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Tool Search</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Skills</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>MCP</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://techcommunity.microsoft.com/blog/appsonazureblog/azure-functions-at-build-2026-update/4524075"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Azure Functions MCP</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://learn.microsoft.com/azure/container-apps/sessions"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Code Interpreter</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-build-2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Voice Live</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Routines</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/agent-distribution-build2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Publishing routes</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Copilot worktree orchestration</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+              </ul>
+            </article>
+
+            <article class="cell cell-harness reveal-up">
+              <header class="cell-head">
+                <span class="cell-no">4</span>
+                <div>
+                  <h3>Harness</h3>
+                  <p class="ask">How does it run safely?</p>
+                </div>
+              </header>
+              <ul class="cap-list">
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Agent Framework</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Agent Service</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Identity</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>ACS (Agent Control Spec)</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>ASSERT</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Rubric</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Tracing / evals</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/agent-optimizer-build2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Agent Optimizer</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>ROI reporting</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Agent 365</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://devblogs.microsoft.com/foundry/agent-distribution-build2026/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Governed distribution</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://blogs.windows.com/windowsdeveloper/2026/06/02/windows-platform-security-for-ai-agents/"
+                    target="_blank"
+                    rel="noopener"
+                    ><span>Windows MXC policy</span
+                    ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                  >
+                </li>
+              </ul>
+            </article>
           </div>
 
-          <div class="layer production-layer">
-            <h3>Productionisation &amp; Governance Layer</h3>
-            <p>
-              Runtime/session state &middot; Agent Service hosted agents &middot; Azure Functions serverless agents &middot;
-              Azure Container Apps sandboxes &middot; Agent Identity &middot; ACS &middot; ASSERT &middot; Rubric &middot; Evals/Tracing &middot;
-              Observability &middot; ROI &middot; Agent 365 &middot; Purview/Defender/Entra
-            </p>
-          </div>
-
-          <div class="layer dev-layer">
-            <h3>Dev / Backend Builder Substrate</h3>
-            <p>
-              Agent Framework &middot; Foundry Toolkit for VS Code &middot; Azure Functions agents/MCP &middot; Rayfin &middot;
-              HorizonDB &middot; Cosmos DB MCP &middot; ACA samples &middot; GitHub SDKs/sandboxes
-            </p>
-          </div>
-
-          <div class="core-grid" aria-label="Core AI builder layers">
-            <section class="core-card model-card">
-              <span class="card-index">1</span>
-              <h3>Model</h3>
-              <p class="card-question">What intelligence do I use?</p>
-              <p>
-                MAI models, Fireworks AI on Foundry, Managed Compute, Frontier Tuning,
-                Foundry Local inference, and NVIDIA/Anyscale placement.
-              </p>
-            </section>
-
-            <section class="core-card context-card">
-              <span class="card-index">2</span>
-              <h3>Context</h3>
-              <p class="card-question">What does the agent know?</p>
-              <p>
-                Foundry IQ, Web IQ, Work IQ, Fabric IQ, knowledge bases, agentic retrieval,
-                graph/ontology/semantic context, Content Understanding, and service memory.
-              </p>
-            </section>
-
-            <section class="core-card tools-card">
-              <span class="card-index">3</span>
-              <h3>Tools</h3>
-              <p class="card-question">What can the agent do?</p>
-              <p>
-                Foundry Toolboxes, Tool Search, skills, MCP, Azure Functions MCP,
-                Code Interpreter, Voice Live, routines, and publishing routes.
-              </p>
-            </section>
-
-            <section class="core-card harness-card">
-              <span class="card-index">4</span>
-              <h3>Harness</h3>
-              <p class="card-question">How does it run safely in production?</p>
-              <p>
-                Agent Framework, Agent Service, Identity, ACS, ASSERT, Rubric,
-                tracing/evals, Optimizer, ROI, Agent 365, and governed distribution.
-              </p>
-            </section>
-          </div>
-
-          <div class="layer infra-layer">
-            <h3>AI Infrastructure</h3>
-            <p>
-              Cobalt 200 VMs &middot; NVIDIA Vera/Rubin NVL72 &middot; RTX Spark to DGX Station for Windows &middot;
-              Majorana 2 quantum chip &middot; Foundry Local &middot; Azure Local &middot; secure sandbox execution
-            </p>
-          </div>
-        </article>
+          <article class="band band-infra reveal-up">
+            <header>
+              <span class="band-edge">METAL PLANE</span>
+              <h3>AI Infrastructure</h3>
+            </header>
+            <ul class="cap-list band-caps">
+              <li>
+                <a
+                  href="https://azure.microsoft.com/en-us/blog/new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for-modern-agentic-ai-workloads/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Cobalt 200 VMs</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://news.microsoft.com/build-2026/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>NVIDIA Vera / Rubin NVL72</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://blogs.windows.com/windowsdeveloper/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>RTX Spark → DGX Station for Windows</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://news.microsoft.com/build-2026/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Majorana 2 quantum chip</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/foundry/accelerate-edge-ai-development-with-foundry-local/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Foundry Local</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/foundry/accelerate-edge-ai-development-with-foundry-local/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Azure Local</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://learn.microsoft.com/azure/container-apps/sessions"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Secure sandbox execution</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://devblogs.microsoft.com/foundry/announcing-foundry-managed-compute/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Managed Compute GPUs</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://blogs.windows.com/windowsdeveloper/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>Windows AI APIs</span
+                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                >
+              </li>
+            </ul>
+          </article>
+        </div>
       </section>
 
-      <section class="explanation" aria-labelledby="explanation-title">
-        <h2 id="explanation-title">How to use this map</h2>
-        <div class="explanation-grid">
+      <!-- ───────────────────── purpose / routing ───────────────────── -->
+      <section class="routing" id="routing" aria-labelledby="routing-title">
+        <div class="section-head">
+          <span class="section-no">02 / PURPOSE</span>
+          <h2 id="routing-title">Announcements in, samples out</h2>
           <p>
-            The center four blocks are the builder assembly line. <strong>Model</strong> is the intelligence layer,
-            <strong>Context</strong> is what the agent can know, <strong>Tools</strong> are what it can do,
-            and <strong>Harness</strong> is the production wrapper that gives the agent identity, state,
-            traceability, evaluations, and lifecycle controls.
+            The atlas is the index. This repo is the workshop: a public-safe
+            space that turns each Build 2026 capability into demos and
+            implementation tracks a builder can ship. Three ways in:
           </p>
-          <p>
-            The horizontal bands explain the surrounding platform. <strong>Dev / Backend Builder Substrate</strong>
-            covers the developer frameworks, SDKs, and MCP surfaces used to build samples. <strong>Productionisation
-            &amp; Governance</strong> covers the controls needed before agents touch real users or enterprise data.
-            <strong>AI Infrastructure</strong> covers the local, cloud, serverless, sandbox, and accelerated compute
-            substrates that make the demos runnable.
-          </p>
+        </div>
+
+        <div class="route-grid">
+          <a class="route-card route-stack" href="stack.html">
+            <span class="route-no">→ 01</span>
+            <h3>The Stack</h3>
+            <p>
+              Walk the five layers one at a time — what each decides, the Build
+              2026 updates inside it, and the sample that exercises it.
+            </p>
+            <span class="route-go">Open the stack</span>
+          </a>
+          <a class="route-card route-samples" href="samples.html">
+            <span class="route-no">→ 02</span>
+            <h3>Samples</h3>
+            <p>
+              The opening backlog: eleven builder questions mapped to eleven
+              concrete builds, each tagged to its layer, public source, and
+              maturity.
+            </p>
+            <span class="route-go">Browse samples</span>
+          </a>
+          <a class="route-card route-sources" href="sources.html">
+            <span class="route-no">→ 03</span>
+            <h3>Sources</h3>
+            <p>
+              The public Microsoft and GitHub material the atlas is anchored to
+              — plus how private context stays local and off GitHub.
+            </p>
+            <span class="route-go">See the receipts</span>
+          </a>
         </div>
       </section>
     </main>
+
+    <!-- ───────────────────── footer ───────────────────── -->
+    <footer class="foot">
+      <nav class="foot-links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="stack.html">Stack</a>
+        <a href="samples.html">Samples</a>
+        <a href="sources.html">Sources</a>
+        <a
+          href="https://news.microsoft.com/build-2026/"
+          target="_blank"
+          rel="noopener"
+          >Build 2026 ↗</a
+        >
+      </nav>
+      <p class="foot-sig">
+        microsoft-build-2026 &middot; AI Builder Atlas &middot; built for the
+        builder
+      </p>
+    </footer>
+
+    <script src="atlas.js" defer></script>
   </body>
 </html>

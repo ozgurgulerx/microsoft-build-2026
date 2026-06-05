@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Samples · Build 2026 AI Builder Atlas</title>
+    <meta
+      name="description"
+      content="The opening sample backlog: eleven Build 2026 builder questions mapped to concrete sample briefs, each tagged to its layer and maturity."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-field" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="masthead" aria-label="Site header">
+      <a class="repo-tag" href="index.html">
+        <span class="bm-mini" aria-hidden="true">BUILD</span>
+        <span class="path">microsoft&#8203;-build-2026</span>
+      </a>
+      <nav class="mast-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="stack.html">Stack</a>
+        <a href="samples.html" aria-current="page">Samples</a>
+        <a href="sources.html">Sources</a>
+      </nav>
+      <span class="mast-stamp">REFRESHED&nbsp;2026.06.05</span>
+    </header>
+
+    <main>
+      <section class="page-head" aria-labelledby="ph-title">
+        <p class="kicker reveal" data-d="0">
+          <span class="kicker-mark">◈</span> 02 / Samples
+        </p>
+        <h1 id="ph-title" class="reveal" data-d="1">
+          Eleven questions, eleven builds
+        </h1>
+        <p class="lede reveal" data-d="2">
+          The opening backlog. Each track starts from a public Build 2026
+          announcement and resolves to one concrete sample brief — tagged to the
+          layer it exercises and where it sits on the maturity ladder.
+        </p>
+        <div class="ladder reveal" data-d="3" aria-label="Maturity ladder">
+          <span class="rung rung-on">Sketch</span>
+          <span class="rung-arrow">→</span>
+          <span class="rung">Planned</span>
+          <span class="rung-arrow">→</span>
+          <span class="rung">Runnable</span>
+          <span class="rung-arrow">→</span>
+          <span class="rung">Governed reference</span>
+        </div>
+      </section>
+
+      <section class="sample-grid" aria-label="Sample tracks">
+        <article class="sample-card s-tools reveal-up" id="track-01">
+          <header>
+            <span class="sample-no">01</span>
+            <span class="sample-status">Planned</span>
+          </header>
+          <h2>Agent Framework + Toolbox</h2>
+          <p class="sample-q">
+            How do I give an agent governed tools without custom plumbing?
+          </p>
+          <p class="sample-a">
+            A Framework agent connected to a Foundry Toolbox / MCP endpoint —
+            tools arrive governed, no bespoke wiring.
+          </p>
+          <footer>
+            <span class="sample-layer" data-layer="tools">TOOLS</span>
+            <a class="sample-link" href="stack.html#tools">Layer ↗</a>
+          </footer>
+        </article>
+
+        <article class="sample-card s-context reveal-up" id="track-02">
+          <header>
+            <span class="sample-no">02</span>
+            <span class="sample-status">Planned</span>
+          </header>
+          <h2>Foundry IQ grounding</h2>
+          <p class="sample-q">
+            How do I ground an agent across enterprise and web context?
+          </p>
+          <p class="sample-a">
+            A retrieval-first agent with Foundry IQ that reports its sources
+            explicitly — grounding you can audit.
+          </p>
+          <footer>
+            <span class="sample-layer" data-layer="context">CONTEXT</span>
+            <a class="sample-link" href="stack.html#context">Layer ↗</a>
+          </footer>
+        </article>
+
+        <article class="sample-card s-harness reveal-up" id="track-03">
+          <header>
+            <span class="sample-no">03</span>
+            <span class="sample-status">Planned</span>
+          </header>
+          <h2>Azure Functions serverless agent</h2>
+          <p class="sample-q">
+            How do I run an event-driven agent cheaply and durably?
+          </p>
+          <p class="sample-a">
+            A Function-hosted markdown or code agent with MCP auth and durable
+            workflow notes — pay-per-run, durable by design.
+          </p>
+          <footer>
+            <span class="sample-layer" data-layer="harness">HARNESS</span>
+            <a class="sample-link" href="stack.html#harness">Layer ↗</a>
+          </footer>
+        </article>
+
+        <article class="sample-card s-harness reveal-up" id="track-04">
+          <header>
+            <span class="sample-no">04</span>
+            <span class="sample-status">Planned</span>
+          </header>
+          <h2>Container Apps sandbox</h2>
+          <p class="sample-q">How do I let agents run code safely?</p>
+          <p class="sample-a">
+            A dynamic session / code-interpreter sandbox with identity and
+            network controls — arbitrary code, contained.
+          </p>
+          <footer>
+            <span class="sample-layer" data-layer="harness">HARNESS</span>
+            <a class="sample-link" href="stack.html#harness">Layer ↗</a>
+          </footer>
+        </article>
+
+        <article class="sample-card s-gov reveal-up" id="track-05">
+          <header>
+            <span class="sample-no">05</span>
+            <span class="sample-status">Planned</span>
+          </header>
+          <h2>AgentOps eval loop</h2>
+          <p class="sample-q">
+            How do I know if the agent is safe and improving?
+          </p>
+          <p class="sample-a">
+            Traces, rubric evals, guardrail checks, and a ROI / quality
+            dashboard shape — the feedback loop that proves it works.
+          </p>
+          <footer>
+            <span class="sample-layer" data-layer="gov">GOVERNANCE</span>
+            <a class="sample-link" href="stack.html#control">Layer ↗</a>
+          </footer>
+        </article>
+
+        <article class="sample-card s-model reveal-up" id="track-06">
+          <header>
+            <span class="sample-no">06</span>
+            <span class="sample-status">Sketch</span>
+          </header>
+          <h2>Model router + inference substrate</h2>
+          <p class="sample-q">
+            Which model and runtime should handle each task?
+          </p>
+          <p class="sample-a">
+            A task router that compares MAI, Fireworks, Managed Compute,
+            Foundry Local, and GPU/VM paths with latency and quality notes.
+          </p>
+          <footer>
+            <span class="sample-layer" data-layer="model">MODEL</span>
+            <a class="sample-link" href="stack.html#model">Layer ↗</a>
+          </footer>
+        </article>
+
+        <article class="sample-card s-infra reveal-up" id="track-07">
+          <header>
+            <span class="sample-no">07</span>
+            <span class="sample-status">Sketch</span>
+          </header>
+          <h2>Foundry Local edge agent</h2>
+          <p class="sample-q">
+            How do I run useful AI where data or latency keeps me local?
+          </p>
+          <p class="sample-a">
+            A voice/retrieval agent brief for Foundry Local 1.2 with an Azure
+            Local deployment note and offline fallback checks.
+          </p>
+          <footer>
+            <span class="sample-layer" data-layer="infra">INFRA</span>
+            <a class="sample-link" href="stack.html#metal">Layer ↗</a>
+          </footer>
+        </article>
+
+        <article class="sample-card s-dev reveal-up" id="track-08">
+          <header>
+            <span class="sample-no">08</span>
+            <span class="sample-status">Sketch</span>
+          </header>
+          <h2>Prompt-to-production backend</h2>
+          <p class="sample-q">
+            How does an agent ship a real backend instead of loose code?
+          </p>
+          <p class="sample-a">
+            A Rayfin + Fabric + HorizonDB blueprint for generated data models,
+            APIs, auth, policies, and deployment review.
+          </p>
+          <footer>
+            <span class="sample-layer" data-layer="dev">DEV</span>
+            <a class="sample-link" href="stack.html#build">Layer ↗</a>
+          </footer>
+        </article>
+
+        <article class="sample-card s-harness reveal-up" id="track-09">
+          <header>
+            <span class="sample-no">09</span>
+            <span class="sample-status">Sketch</span>
+          </header>
+          <h2>Windows local-agent harness</h2>
+          <p class="sample-q">
+            How do I run desktop agents with OS containment and identity?
+          </p>
+          <p class="sample-a">
+            A Windows AI / MXC / Aion checklist for local model execution,
+            sandboxing, attribution, policy, and enterprise controls.
+          </p>
+          <footer>
+            <span class="sample-layer" data-layer="harness">HARNESS</span>
+            <a class="sample-link" href="stack.html#harness">Layer ↗</a>
+          </footer>
+        </article>
+
+        <article class="sample-card s-tools reveal-up" id="track-10">
+          <header>
+            <span class="sample-no">10</span>
+            <span class="sample-status">Sketch</span>
+          </header>
+          <h2>Copilot worktree workflow</h2>
+          <p class="sample-q">
+            How do I coordinate parallel agent sessions without losing review
+            control?
+          </p>
+          <p class="sample-a">
+            A GitHub Copilot app workflow for worktrees, issue-to-PR loops,
+            review gates, rollback notes, and traceable decisions.
+          </p>
+          <footer>
+            <span class="sample-layer" data-layer="tools">TOOLS</span>
+            <a class="sample-link" href="stack.html#tools">Layer ↗</a>
+          </footer>
+        </article>
+
+        <article class="sample-card s-gov reveal-up" id="track-11">
+          <header>
+            <span class="sample-no">11</span>
+            <span class="sample-status">Sketch</span>
+          </header>
+          <h2>Discovery research agent</h2>
+          <p class="sample-q">
+            How do I make agentic research reviewable instead of speculative?
+          </p>
+          <p class="sample-a">
+            A Microsoft Discovery-inspired narrative for hypothesis,
+            evidence, tool use, reviewer checkpoints, and governed handoff.
+          </p>
+          <footer>
+            <span class="sample-layer" data-layer="gov">GOVERNANCE</span>
+            <a class="sample-link" href="stack.html#control">Layer ↗</a>
+          </footer>
+        </article>
+
+        <article class="sample-card sample-cta reveal-up">
+          <h2>Implementation ladder</h2>
+          <p class="sample-a">
+            The full maturity ladder lives in the repo. Each brief must verify
+            public SDK access, preview status, identity, cleanup, and test
+            steps before it becomes runnable.
+          </p>
+          <a class="btn btn-ghost" href="samples/README.md"
+            >samples/README.md &rarr;</a
+          >
+        </article>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <nav class="foot-links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="stack.html">Stack</a>
+        <a href="samples.html">Samples</a>
+        <a href="sources.html">Sources</a>
+        <a
+          href="https://news.microsoft.com/build-2026/"
+          target="_blank"
+          rel="noopener"
+          >Build 2026 ↗</a
+        >
+      </nav>
+      <p class="foot-sig">
+        microsoft-build-2026 &middot; AI Builder Atlas &middot; built for the
+        builder
+      </p>
+    </footer>
+
+    <script src="atlas.js" defer></script>
+  </body>
+</html>

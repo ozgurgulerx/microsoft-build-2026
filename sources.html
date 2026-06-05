@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sources · Build 2026 AI Builder Atlas</title>
+    <meta
+      name="description"
+      content="The public Microsoft and GitHub source baseline behind the Build 2026 AI Builder Atlas, plus how private context is kept local and off GitHub."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-field" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="masthead" aria-label="Site header">
+      <a class="repo-tag" href="index.html">
+        <span class="bm-mini" aria-hidden="true">BUILD</span>
+        <span class="path">microsoft&#8203;-build-2026</span>
+      </a>
+      <nav class="mast-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="stack.html">Stack</a>
+        <a href="samples.html">Samples</a>
+        <a href="sources.html" aria-current="page">Sources</a>
+      </nav>
+      <span class="mast-stamp">REFRESHED&nbsp;2026.06.05</span>
+    </header>
+
+    <main>
+      <section class="page-head" aria-labelledby="ph-title">
+        <p class="kicker reveal" data-d="0">
+          <span class="kicker-mark">◈</span> 03 / Sources
+        </p>
+        <h1 id="ph-title" class="reveal" data-d="1">
+          Anchored to public ground truth
+        </h1>
+        <p class="lede reveal" data-d="2">
+          Every claim in this atlas traces back to public Microsoft and GitHub
+          material. No leaks, no NDA content — just the announcements, recaps,
+          and docs, linked so you can check the work yourself.
+        </p>
+      </section>
+
+      <section class="sources" aria-label="Public sources">
+        <ul class="source-list">
+          <li class="reveal-up">
+            <a
+              href="https://news.microsoft.com/build-2026/"
+              target="_blank"
+              rel="noopener"
+              ><span>Build 2026 newsroom</span> news.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/"
+              target="_blank"
+              rel="noopener"
+              ><span>Official Build 2026 blog</span> blogs.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-build-2026/"
+              target="_blank"
+              rel="noopener"
+              ><span>Foundry Build recap</span> devblogs.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/"
+              target="_blank"
+              rel="noopener"
+              ><span>MAI model family</span> microsoft.ai</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://devblogs.microsoft.com/foundry/announcing-foundry-managed-compute/"
+              target="_blank"
+              rel="noopener"
+              ><span>Foundry Managed Compute</span> devblogs.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://devblogs.microsoft.com/foundry/accelerate-edge-ai-development-with-foundry-local/"
+              target="_blank"
+              rel="noopener"
+              ><span>Foundry Local + Azure Local</span> devblogs.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+              target="_blank"
+              rel="noopener"
+              ><span>Foundry Agent Service</span> devblogs.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://devblogs.microsoft.com/foundry/agent-distribution-build2026/"
+              target="_blank"
+              rel="noopener"
+              ><span>Foundry agent distribution</span> devblogs.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq/"
+              target="_blank"
+              rel="noopener"
+              ><span>Foundry IQ updates</span> devblogs.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/"
+              target="_blank"
+              rel="noopener"
+              ><span>Fabric, Rayfin, HorizonDB</span> azure.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/"
+              target="_blank"
+              rel="noopener"
+              ><span>Trust, evals, ASSERT, ACS</span> devblogs.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework/"
+              target="_blank"
+              rel="noopener"
+              ><span>Observability to ROI</span> devblogs.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://devblogs.microsoft.com/foundry/agent-optimizer-build2026/"
+              target="_blank"
+              rel="noopener"
+              ><span>Agent Optimizer</span> devblogs.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://techcommunity.microsoft.com/blog/appsonazureblog/azure-functions-at-build-2026-update/4524075"
+              target="_blank"
+              rel="noopener"
+              ><span>Azure Functions at Build</span>
+              techcommunity.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://learn.microsoft.com/azure/container-apps/sessions"
+              target="_blank"
+              rel="noopener"
+              ><span>Container Apps dynamic sessions</span>
+              learn.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://devblogs.microsoft.com/cosmosdb/announced-at-ms-build-2026-azure-cosmos-db-mcp-toolkit-semantic-reranking-global-secondary-indexes-and-more/"
+              target="_blank"
+              rel="noopener"
+              ><span>Cosmos DB MCP &amp; more</span> devblogs.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://devblogs.microsoft.com/microsoft365dev/work-iq-production-ready-intelligence-for-every-agent/"
+              target="_blank"
+              rel="noopener"
+              ><span>Work IQ for agents</span> devblogs.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://azure.microsoft.com/en-us/blog/new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for-modern-agentic-ai-workloads/"
+              target="_blank"
+              rel="noopener"
+              ><span>Cobalt 200 VMs</span> azure.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/"
+              target="_blank"
+              rel="noopener"
+              ><span>Agent 365 availability</span> microsoft.com/security</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://blogs.windows.com/windowsdeveloper/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/"
+              target="_blank"
+              rel="noopener"
+              ><span>Windows AI developer platform</span>
+              blogs.windows.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://blogs.windows.com/windowsdeveloper/2026/06/02/windows-platform-security-for-ai-agents/"
+              target="_blank"
+              rel="noopener"
+              ><span>Windows platform security for agents</span>
+              blogs.windows.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://learn.microsoft.com/windows-365/agents/w365a-availability-a365"
+              target="_blank"
+              rel="noopener"
+              ><span>Windows 365 Agents availability</span>
+              learn.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://devblogs.microsoft.com/visualstudio/whats-coming-next-in-visual-studio-our-microsoft-build-2026-announcements/"
+              target="_blank"
+              rel="noopener"
+              ><span>Visual Studio Build announcements</span>
+              devblogs.microsoft.com</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/"
+              target="_blank"
+              rel="noopener"
+              ><span>GitHub Copilot app</span> github.blog</a
+            >
+          </li>
+          <li class="reveal-up">
+            <a
+              href="https://azure.microsoft.com/en-us/blog/announcing-microsoft-discovery-general-availability-and-microsoft-discovery-app-preview/"
+              target="_blank"
+              rel="noopener"
+              ><span>Microsoft Discovery GA</span> azure.microsoft.com</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="boundary" aria-labelledby="boundary-title">
+        <div class="section-head">
+          <span class="section-no">04 / THE BOUNDARY</span>
+          <h2 id="boundary-title">Public-safe by design</h2>
+          <p>How sensitive context stays out of this repo entirely.</p>
+        </div>
+        <div class="boundary-card">
+          <span class="lock">⛒ PRIVATE BOUNDARY</span>
+          <p>
+            Microsoft-sensitive context lives under
+            <code>private/microsoft/ms-build-2026-info-repo</code> —
+            intentionally gitignored, local-only, and never pushed. A pre-push
+            check, <code>scripts/validate-public-boundary.sh</code>, blocks
+            private or binary artifacts from leaving local before they can reach
+            GitHub.
+          </p>
+          <p class="boundary-foot">
+            Everything you can read here, on every page, is drawn only from the
+            public sources above and the public content scan in
+            <code>docs/build-2026-latest-content-scan.md</code>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <nav class="foot-links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="stack.html">Stack</a>
+        <a href="samples.html">Samples</a>
+        <a href="sources.html">Sources</a>
+        <a
+          href="https://news.microsoft.com/build-2026/"
+          target="_blank"
+          rel="noopener"
+          >Build 2026 ↗</a
+        >
+      </nav>
+      <p class="foot-sig">
+        microsoft-build-2026 &middot; AI Builder Atlas &middot; built for the
+        builder
+      </p>
+    </footer>
+
+    <script src="atlas.js" defer></script>
+  </body>
+</html>

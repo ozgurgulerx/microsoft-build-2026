@@ -30,8 +30,7 @@ This scan captures public Microsoft Build 2026 content that should shape the nex
 
 ## Next Content Moves
 
-1. Convert the current sample backlog into seven concrete demo briefs: model router, context layer, governed toolbox, serverless agent, local/edge agent, production eval loop, and prompt-to-production backend.
+1. Completed: expanded the public site and sample backlog to eleven design briefs covering model routing, local/edge execution, prompt-to-production backend, Windows local-agent harness, Copilot worktree workflow, and Discovery research workflows.
 2. Add a short status field to each announcement row: GA, public preview, private preview, limited access, planned GA, or early access.
 3. Create an infrastructure decision table that separates local device, Windows Cloud PC, Azure Functions, Container Apps dynamic sessions, Cobalt 200, GPU/Managed Compute, Foundry Local, and Azure Local.
-4. Add a "source freshness" section to the README that links this scan.
-
+4. Keep the README and `sources.html` source baseline in sync with this scan whenever new official Build posts are added.
