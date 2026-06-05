@@ -6,6 +6,8 @@ The target persona is the AI builder: someone who wants to assemble models, cont
 
 Last refreshed: 2026-06-05.
 
+Static page: [index.html](index.html)
+
 ## Opening Map
 
 The repo is organized around the practical builder path:
@@ -59,4 +61,3 @@ Local Microsoft-sensitive context is stored under:
 `private/microsoft/ms-build-2026-info-repo`
 
 That folder is intentionally gitignored. It should stay local and must not be uploaded or pushed.
-

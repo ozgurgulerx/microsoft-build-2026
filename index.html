@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Microsoft Build 2026 AI Builder Atlas</title>
+    <meta
+      name="description"
+      content="A public-safe map of Microsoft Build 2026 AI announcements for builders moving from model and context to tools, harness, governance, and infrastructure."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="atlas-hero" aria-labelledby="page-title">
+        <p class="eyebrow">Opening Map</p>
+        <div class="hero-copy">
+          <h1 id="page-title">Build 2026 AI Builder Atlas</h1>
+          <p>
+            A working classification for the AI updates announced around Microsoft Build 2026:
+            start with intelligence, ground it, give it tools, run it safely, and operate it on the right infrastructure.
+          </p>
+        </div>
+
+        <article class="classification-slide" aria-labelledby="slide-title">
+          <div class="slide-header">
+            <p class="slide-kicker">AI update classification</p>
+            <h2 id="slide-title">From dev substrate to production harness</h2>
+            <p>
+              Read the announcements as a complete path: build the backend and agent harness,
+              assemble model/context/tools, then operate it safely.
+            </p>
+          </div>
+
+          <div class="layer production-layer">
+            <h3>Productionisation &amp; Governance Layer</h3>
+            <p>
+              Runtime/session state &middot; Agent Service hosted agents &middot; Azure Functions serverless agents &middot;
+              Azure Container Apps sandboxes &middot; Agent Identity &middot; ACS &middot; ASSERT &middot; Rubric &middot; Evals/Tracing &middot;
+              Observability &middot; ROI &middot; Agent 365 &middot; Purview/Defender/Entra
+            </p>
+          </div>
+
+          <div class="layer dev-layer">
+            <h3>Dev / Backend Builder Substrate</h3>
+            <p>
+              Agent Framework &middot; Foundry Toolkit for VS Code &middot; Azure Functions agents/MCP &middot; Rayfin &middot;
+              HorizonDB &middot; Cosmos DB MCP &middot; ACA samples &middot; GitHub SDKs/sandboxes
+            </p>
+          </div>
+
+          <div class="core-grid" aria-label="Core AI builder layers">
+            <section class="core-card model-card">
+              <span class="card-index">1</span>
+              <h3>Model</h3>
+              <p class="card-question">What intelligence do I use?</p>
+              <p>
+                MAI models, Fireworks AI on Foundry, Managed Compute, Frontier Tuning,
+                Foundry Local inference, and NVIDIA/Anyscale placement.
+              </p>
+            </section>
+
+            <section class="core-card context-card">
+              <span class="card-index">2</span>
+              <h3>Context</h3>
+              <p class="card-question">What does the agent know?</p>
+              <p>
+                Foundry IQ, Web IQ, Work IQ, Fabric IQ, knowledge bases, agentic retrieval,
+                graph/ontology/semantic context, Content Understanding, and service memory.
+              </p>
+            </section>
+
+            <section class="core-card tools-card">
+              <span class="card-index">3</span>
+              <h3>Tools</h3>
+              <p class="card-question">What can the agent do?</p>
+              <p>
+                Foundry Toolboxes, Tool Search, skills, MCP, Azure Functions MCP,
+                Code Interpreter, Voice Live, routines, and publishing routes.
+              </p>
+            </section>
+
+            <section class="core-card harness-card">
+              <span class="card-index">4</span>
+              <h3>Harness</h3>
+              <p class="card-question">How does it run safely in production?</p>
+              <p>
+                Agent Framework, Agent Service, Identity, ACS, ASSERT, Rubric,
+                tracing/evals, Optimizer, ROI, Agent 365, and governed distribution.
+              </p>
+            </section>
+          </div>
+
+          <div class="layer infra-layer">
+            <h3>AI Infrastructure</h3>
+            <p>
+              Cobalt 200 VMs &middot; NVIDIA Vera/Rubin NVL72 &middot; RTX Spark to DGX Station for Windows &middot;
+              Majorana 2 quantum chip &middot; Foundry Local &middot; Azure Local &middot; secure sandbox execution
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="explanation" aria-labelledby="explanation-title">
+        <h2 id="explanation-title">How to use this map</h2>
+        <div class="explanation-grid">
+          <p>
+            The center four blocks are the builder assembly line. <strong>Model</strong> is the intelligence layer,
+            <strong>Context</strong> is what the agent can know, <strong>Tools</strong> are what it can do,
+            and <strong>Harness</strong> is the production wrapper that gives the agent identity, state,
+            traceability, evaluations, and lifecycle controls.
+          </p>
+          <p>
+            The horizontal bands explain the surrounding platform. <strong>Dev / Backend Builder Substrate</strong>
+            covers the developer frameworks, SDKs, and MCP surfaces used to build samples. <strong>Productionisation
+            &amp; Governance</strong> covers the controls needed before agents touch real users or enterprise data.
+            <strong>AI Infrastructure</strong> covers the local, cloud, serverless, sandbox, and accelerated compute
+            substrates that make the demos runnable.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
