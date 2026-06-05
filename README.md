@@ -20,6 +20,20 @@ The repo is organized around the practical builder path:
 
 See [docs/ai-builder-map.md](docs/ai-builder-map.md) for the full structure.
 
+## AI Update Classification
+
+Read the Build 2026 AI announcements as a complete builder path: build the backend and agent harness, assemble model/context/tools, then operate it safely.
+
+| Layer | Role in the builder stack | Representative updates |
+| --- | --- | --- |
+| Productionisation & Governance | Controls agents before they touch real users, enterprise data, or business workflows. | Runtime/session state, Agent Service hosted agents, Azure Functions serverless agents, Azure Container Apps sandboxes, Agent Identity, ACS, ASSERT, Rubric, evals/tracing, observability, ROI, Agent 365, Purview/Defender/Entra. |
+| Dev / Backend Builder Substrate | Gives builders the frameworks, SDKs, MCP surfaces, and local loops needed to turn announcements into samples. | Agent Framework, Foundry Toolkit for VS Code, Azure Functions agents/MCP, Rayfin, HorizonDB, Cosmos DB MCP, ACA samples, GitHub SDKs/sandboxes. |
+| 1. Model | Chooses the intelligence layer. | MAI models, Fireworks AI on Foundry, Managed Compute, Frontier Tuning, Foundry Local inference, NVIDIA/Anyscale placement. |
+| 2. Context | Decides what the agent knows. | Foundry IQ, Web IQ, Work IQ, Fabric IQ, knowledge bases, agentic retrieval, graph/ontology/semantic context, Content Understanding, service memory. |
+| 3. Tools | Defines what the agent can do. | Foundry Toolboxes, Tool Search, skills, MCP, Azure Functions MCP, Code Interpreter, Voice Live, routines, publishing routes. |
+| 4. Harness | Runs the agent safely in production. | Agent Framework, Agent Service, Identity, ACS, ASSERT, Rubric, tracing/evals, Optimizer, ROI, Agent 365, governed distribution. |
+| AI Infrastructure | Provides the compute and execution substrate. | Cobalt 200 VMs, NVIDIA Vera/Rubin NVL72, RTX Spark to DGX Station for Windows, Majorana 2, Foundry Local, Azure Local, secure sandbox execution. |
+
 ## Repo Contents
 
 - [docs/announcement-index.md](docs/announcement-index.md): public announcement map with sample opportunities.
