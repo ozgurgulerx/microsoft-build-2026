@@ -4,7 +4,7 @@ Public-safe repo for mapping Microsoft Build 2026 AI announcements into builder-
 
 The target persona is the AI builder: someone who wants to assemble models, context, tools, runtime, identity, evaluations, and deployment into production-grade agent systems.
 
-Last refreshed: 2026-06-05.
+Last refreshed: 2026-06-06.
 
 Static page: [index.html](index.html)
 
@@ -68,14 +68,23 @@ Read the Build 2026 AI announcements as a complete builder path: build the backe
 This repo uses public Microsoft sources as the external source of truth, including:
 
 - Microsoft Build 2026 newsroom: https://news.microsoft.com/build-2026/
+- Microsoft Build 2026 sessions catalog: https://build.microsoft.com/
+- Microsoft Build 2026 live blog and demos: https://news.microsoft.com/build-2026-live-blog
 - Microsoft Build 2026 official blog: https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/
+- Microsoft agent platform system framing: https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/
 - Microsoft Foundry Build recap: https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-build-2026/
 - Microsoft AI model family: https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/
+- MAI-Thinking-1: https://microsoft.ai/news/introducing-mai-thinking-1/
+- MAI-Code-1-Flash: https://microsoft.ai/news/introducingmai-code-1-flash/
+- MAI-Image-2.5: https://microsoft.ai/news/introducing-mai-image-2-5/
+- MAI-Transcribe-1.5: https://microsoft.ai/models/mai-transcribe-1-5/
 - Foundry Managed Compute: https://devblogs.microsoft.com/foundry/announcing-foundry-managed-compute/
 - Microsoft Agent Framework Build announcement: https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/
+- Foundry Toolkit for VS Code at Build: https://techcommunity.microsoft.com/blog/azuredevcommunityblog/foundry-toolkit-for-vs-code-at-build-hosted-agents-end-to-end-a-smarter-toolbox-/4524941
 - Foundry Agent Service at Build: https://devblogs.microsoft.com/foundry/agent-service-build2026/
 - Foundry agent distribution: https://devblogs.microsoft.com/foundry/agent-distribution-build2026/
 - Microsoft Web IQ: https://blogs.bing.com/search/June-2026/Announcing-Microsoft-Web-IQ
+- Web IQ grounding architecture: https://commandline.microsoft.com/grounding-system-agentic-web-engineering-retrieval/
 - Foundry IQ Build updates: https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq/
 - Azure Content Understanding at Build: https://devblogs.microsoft.com/foundry/whats-new-in-azure-content-understanding-at-build-2026/
 - Foundry Local Build update: https://devblogs.microsoft.com/foundry/accelerate-edge-ai-development-with-foundry-local/
@@ -98,10 +107,22 @@ This repo uses public Microsoft sources as the external source of truth, includi
 - Azure Container Apps dynamic sessions: https://learn.microsoft.com/azure/container-apps/sessions
 - Azure Container Apps Sandboxes: https://techcommunity.microsoft.com/blog/appsonazureblog/introducing-azure-container-apps-sandboxes-secure-infrastructure-for-agentic-wor/4524131
 - Azure Logic Apps at Build: https://techcommunity.microsoft.com/blog/integrationsonazureblog/whats-new-in-azure-logic-apps-at-microsoft-build-2026/4524685
+- Azure Logic Apps Automation: https://techcommunity.microsoft.com/blog/integrationsonazureblog/%F0%9F%8E%89-automation-just-became-a-team-sport-meet-azure-logic-apps-automation-/4524555
+- Azure Connector Namespace overview: https://learn.microsoft.com/en-us/azure/logic-apps/connector-namespace/connector-namespace-overview
+- Hosted MCP servers in Connector Namespace: https://techcommunity.microsoft.com/blog/integrationsonazureblog/hosted-mcp-servers-in-connector-namespace-preview/4524588
+- Azure API Management at Build: https://techcommunity.microsoft.com/blog/integrationsonazureblog/whats-new-in-azure-api-management-at-microsoft-build-2026/4524683
+- Azure API Center MCP test console and Git sync: https://techcommunity.microsoft.com/blog/integrationsonazureblog/mcp-test-console-and-git-repository-synch-in-azure-api-center/4524617
 - Azure Speech and Voice Live: https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/azure-speech-at-build-2026-powering-voice-agents-with-real-time-and-life-like-ex/4524638
 - Cosmos DB Build announcements: https://devblogs.microsoft.com/cosmosdb/announced-at-ms-build-2026-azure-cosmos-db-mcp-toolkit-semantic-reranking-global-secondary-indexes-and-more/
 - Work IQ for agents: https://devblogs.microsoft.com/microsoft365dev/work-iq-production-ready-intelligence-for-every-agent/
 - Microsoft Discovery: https://azure.microsoft.com/en-us/blog/announcing-microsoft-discovery-general-availability-and-microsoft-discovery-app-preview/
+- Project Solara: https://commandline.microsoft.com/project-solara-build-2026/
+- Microsoft Build skilling and credentials: https://techcommunity.microsoft.com/blog/skills-hub-blog/new-ways-to-learn-and-demonstrate-skills/4519038
+- Customer proof input - Tecban: https://www.microsoft.com/en/customers/story/26633-tecban-microsoft-365-copilot
+- Customer proof input - KBank: https://www.microsoft.com/en/customers/story/26245-kbank-azure-openai-in-foundry-models
+- Customer proof input - Akkuro / Kamuno: https://www.microsoft.com/en/customers/story/26504-akkuro-by-topicus-azure-red-hat-openshift
+- Customer proof input - Transcard: https://www.microsoft.com/en/customers/story/25668-transcard-azure-ai-foundry
+- Customer proof input - Windows 365 banking examples: https://www.microsoft.com/en/customers/story/26086-banco-de-credito-del-peru-windows-365
 
 ## Private Local Context
 

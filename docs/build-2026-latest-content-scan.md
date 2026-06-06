@@ -55,6 +55,38 @@ A wider public-source crawl checked official Microsoft blogs, Microsoft AI model
 | Azure API Management and API Center MCP governance | APIM/API Center Build content adds AI gateway capabilities, MCP test console, Git sync, and catalog/discovery surfaces for APIs, agents, skills, and MCP tools. | Add an API/tool catalog governance lane to the Tools and Harness layers. | https://techcommunity.microsoft.com/blog/integrationsonazureblog/whats-new-in-azure-api-management-at-microsoft-build-2026/4524683; https://techcommunity.microsoft.com/blog/integrationsonazureblog/new-ai-gateway-capabilities-in-azure-api-management/4524604; https://techcommunity.microsoft.com/blog/integrationsonazureblog/mcp-test-console-and-git-repository-synch-in-azure-api-center/4524617 |
 | Build skilling and credentials | Microsoft Pro Badges, Applied Skills, Foundry/MCP Applied Skills, and partner-authored AI Skills Navigator content are now part of the Build public surface. | Useful for a learning path appendix; lower priority than runnable samples. | https://techcommunity.microsoft.com/blog/skills-hub-blog/new-ways-to-learn-and-demonstrate-skills/4519038 |
 
+## User-Provided Asset Review - 2026-06-06
+
+The user-provided priority list was reviewed as an editorial input. Public sources were accepted where they could be verified. Non-public or protected references were excluded from public repo content.
+
+| Priority input | Public-safe review result | Repo action |
+| --- | --- | --- |
+| Build 2026 news hub | Accepted. This remains the best single public landing page for keynote videos, demo videos, images, official blog links, and More news links. | Keep as first source in README and `sources.html`; continue using the newsroom inventory as the source map. |
+| Build sessions catalog | Accepted as a follow-up source, but not a primary announcement source. Session pages can go deeper by topic after the public announcement overview. | Add to public baseline as a research/implementation follow-up, not as a status source. |
+| Build demos | Accepted. The public news hub exposes demo videos for Microsoft IQ, Microsoft Foundry + Agent 365, OpenClaw + Windows, MDASH, GitHub App + Rayfin, Microsoft Discovery, and Frontier Tuning. | Add a demo-priority note for validating sample narratives before implementation. |
+| Customer/partner-ready hero announcements | Accepted with public-source constraint. Use official Microsoft public blog/news/customer-story pages only. | Add a customer-proof lane for customer conversations and follow-up messaging. |
+| Work IQ | Already captured and still high priority. The public source says APIs are generally available on June 16, 2026. | Keep status-verification note before runnable sample work. |
+| Microsoft Foundry updates | Already captured as the core platform story. | Keep as first platform row in the announcement index. |
+| Build security recap and Windows platform security | Already captured and still high priority for regulated-industry/security conversations. | Keep as required checklist inputs for runnable samples. |
+| GitHub Copilot app | Already captured as the agentic developer-workflow source. | Keep as Copilot worktree workflow sample basis. |
+
+## Public Customer Proof Inputs
+
+The pasted customer-story list is useful as a public-safe proof layer, especially for financial services and regulated workloads. These are not Build announcements, so they should support customer conversations and sample positioning rather than drive runnable implementation details.
+
+| Customer proof | Public signal | Best-fit atlas lane | Source |
+| --- | --- | --- | --- |
+| Tecban | Microsoft 365 Copilot and GitHub Copilot adoption with governance; 98 use cases and reported productivity gains. | Enterprise Copilot adoption, agent rollout, developer productivity. | https://www.microsoft.com/en/customers/story/26633-tecban-microsoft-365-copilot |
+| KBank | Human-first agentic AI adoption using Azure OpenAI in Foundry Models, with staff upskilling and productivity improvements. | Responsible adoption, employee enablement, agent rollout. | https://www.microsoft.com/en/customers/story/26245-kbank-azure-openai-in-foundry-models |
+| First West Credit Union | Microsoft 365 Copilot and Copilot Studio agent adoption for service acceleration and productivity. | Customer-service agents and Microsoft 365 productivity. | https://www.microsoft.com/en/customers/story/26016-first-west-credit-union-microsoft-365-copilot |
+| Akkuro / Kamuno | Azure Red Hat OpenShift, Microsoft Foundry, and Azure OpenAI in Foundry Models for regulated SME lending document intelligence. | Document intelligence, regulated AI workflow, production platform. | https://www.microsoft.com/en/customers/story/26504-akkuro-by-topicus-azure-red-hat-openshift |
+| Discovery Bank | Azure OpenAI in Foundry Models and Azure Databricks for personalized banking recommendations and service-agent support. | Personalization, data foundation, service agents. | https://www.microsoft.com/en/customers/story/26157-discovery-bank-azure-openai-in-foundry-models |
+| Transcard | Azure AI Foundry-powered Virtual CFO agents for proactive finance insights and payment actions. | Agentic finance workflow and action-oriented agents. | https://www.microsoft.com/en/customers/story/25668-transcard-azure-ai-foundry |
+| Banco de Credito del Peru | Windows 365 Cloud PCs for developers and technical teams, with governance through Intune and Entra ID. | Secure developer/agent desktop substrate. | https://www.microsoft.com/en/customers/story/26086-banco-de-credito-del-peru-windows-365 |
+| ABN AMRO | Windows 365 for 3,500 offshore developers with reduced network latency and faster migration. | Secure developer desktop modernization. | https://www.microsoft.com/en/customers/story/25993-abn-amro-bank-windows-365 |
+| Axis Bank | Power Platform Center of Excellence and 120+ governed low-code solutions. | Governed low-code workflow and Power Platform scale. | https://www.microsoft.com/en/customers/story/26090-axis-bank-limited-power-apps |
+| Temenos | Azure SQL Database Hyperscale and AKS for cloud-native core banking modernization. | Data platform and core banking modernization. | https://www.microsoft.com/en/customers/story/26213-temenos-headquarters-sa-azure-sql |
+
 ## Status Notes To Verify Before Runnable Samples
 
 - Hosted agents are described as expected to reach GA by early July 2026 in the Foundry Build recap.
