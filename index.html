@@ -30,6 +30,7 @@
       <nav class="mast-nav" aria-label="Primary">
         <a href="index.html" aria-current="page">Home</a>
         <a href="stack.html">Stack</a>
+        <a href="journeys.html">Journeys</a>
         <a href="samples.html">Samples</a>
         <a href="sources.html">Sources</a>
       </nav>
@@ -100,7 +101,7 @@
               <section class="subgroup">
                 <header class="sg-head">
                   <span class="sg-title">Agent Runtime</span>
-                  <span class="sg-count">7</span>
+                  <span class="sg-count">8</span>
                 </header>
                 <ul class="cap-list sg-list">
                   <li>
@@ -132,7 +133,7 @@
                   </li>
                   <li>
                     <a
-                      href="https://techcommunity.microsoft.com/blog/appsonazureblog/azure-functions-at-build-2026-update/4524075"
+                      href="https://techcommunity.microsoft.com/blog/appsonazureblog/introducing-the-azure-functions-serverless-agents-runtime-preview/4523804"
                       target="_blank"
                       rel="noopener"
                       ><span>Azure Functions Serverless Agents</span
@@ -163,6 +164,15 @@
                       target="_blank"
                       rel="noopener"
                       ><span>Windows Agent Containment</span
+                      ><span class="cap-arrow" aria-hidden="true">↗</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://commandline.microsoft.com/agent-control-specification-runtime-governance/"
+                      target="_blank"
+                      rel="noopener"
+                      ><span>Agent Control Specification (ACS)</span
                       ><span class="cap-arrow" aria-hidden="true">↗</span></a
                     >
                   </li>
@@ -664,7 +674,7 @@
               <ul class="cap-list">
                 <li>
                   <a
-                    href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                    href="https://devblogs.microsoft.com/foundry/toolbox-build-26/"
                     target="_blank"
                     rel="noopener"
                     ><span>Foundry Toolboxes</span
@@ -673,7 +683,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+                    href="https://devblogs.microsoft.com/foundry/toolbox-build-26/"
                     target="_blank"
                     rel="noopener"
                     ><span>Tool Search</span
@@ -718,10 +728,10 @@
                 </li>
                 <li>
                   <a
-                    href="https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/"
+                    href="https://devblogs.microsoft.com/foundry/toolbox-build-26/"
                     target="_blank"
                     rel="noopener"
-                    ><span>Copilot worktree orchestration</span
+                    ><span>Browser automation (Playwright workspaces)</span
                     ><span class="cap-arrow" aria-hidden="true">↗</span></a
                   >
                 </li>
@@ -830,15 +840,6 @@
               </li>
               <li>
                 <a
-                  href="https://devblogs.microsoft.com/foundry/accelerate-edge-ai-development-with-foundry-local/"
-                  target="_blank"
-                  rel="noopener"
-                  ><span>Azure Local</span
-                  ><span class="cap-arrow" aria-hidden="true">↗</span></a
-                >
-              </li>
-              <li>
-                <a
                   href="https://learn.microsoft.com/azure/container-apps/sessions"
                   target="_blank"
                   rel="noopener"
@@ -869,10 +870,111 @@
         </div>
       </section>
 
+      <!-- ─────────────────── builder journeys (compact) ─────────────────── -->
+      <section class="journeys-band" id="journeys" aria-labelledby="jb-title">
+        <div class="section-head">
+          <span class="section-no">02 / BUILDER JOURNEYS</span>
+          <h2 id="jb-title">Now read it sideways</h2>
+          <p>
+            The map above is vertical — layers you stack. Builder journeys are
+            the horizontal cut: six end-to-end workflows that compose those
+            layers into something you could ship.
+            <a class="inline-link" href="journeys.html"
+              >See all six journeys &rarr;</a
+            >
+          </p>
+        </div>
+
+        <div class="journey-teasers">
+          <a
+            class="journey-teaser jt-build reveal-up"
+            href="journeys.html#journey-1"
+          >
+            <span class="jt-no">J1</span>
+            <h3>Prompt-to-Production Agent</h3>
+            <ul class="chiplist journey-layers jt-chips" aria-label="Layers">
+              <li data-layer="dev">Build</li>
+              <li data-layer="context">Context</li>
+              <li data-layer="tools">Tools</li>
+              <li data-layer="harness">Harness</li>
+              <li data-layer="gov">Control</li>
+            </ul>
+            <span class="jt-go">end to end &rarr;</span>
+          </a>
+
+          <a
+            class="journey-teaser jt-tools reveal-up"
+            href="journeys.html#journey-2"
+          >
+            <span class="jt-no">J2</span>
+            <h3>Agentic Developer Workflow</h3>
+            <ul class="chiplist journey-layers jt-chips" aria-label="Layers">
+              <li data-layer="dev">Build</li>
+              <li data-layer="tools">Tools</li>
+            </ul>
+            <span class="jt-go">end to end &rarr;</span>
+          </a>
+
+          <a
+            class="journey-teaser jt-harness reveal-up"
+            href="journeys.html#journey-3"
+          >
+            <span class="jt-no">J3</span>
+            <h3>Secure Local Agent</h3>
+            <ul class="chiplist journey-layers jt-chips" aria-label="Layers">
+              <li data-layer="harness">Harness</li>
+              <li data-layer="infra">Metal</li>
+              <li data-layer="gov">Control</li>
+            </ul>
+            <span class="jt-go">end to end &rarr;</span>
+          </a>
+
+          <a
+            class="journey-teaser jt-context reveal-up"
+            href="journeys.html#journey-4"
+          >
+            <span class="jt-no">J4</span>
+            <h3>Governed Enterprise Action Plane</h3>
+            <ul class="chiplist journey-layers jt-chips" aria-label="Layers">
+              <li data-layer="context">Context</li>
+              <li data-layer="tools">Tools</li>
+              <li data-layer="gov">Control</li>
+            </ul>
+            <span class="jt-go">end to end &rarr;</span>
+          </a>
+
+          <a
+            class="journey-teaser jt-eval reveal-up"
+            href="journeys.html#journey-5"
+          >
+            <span class="jt-no">J5</span>
+            <h3>Safe Code Execution + Evaluation</h3>
+            <ul class="chiplist journey-layers jt-chips" aria-label="Layers">
+              <li data-layer="harness">Harness</li>
+              <li data-layer="gov">Control</li>
+            </ul>
+            <span class="jt-go">end to end &rarr;</span>
+          </a>
+
+          <a
+            class="journey-teaser jt-research reveal-up"
+            href="journeys.html#journey-6"
+          >
+            <span class="jt-no">J6</span>
+            <h3>Research / Evidence Agent</h3>
+            <ul class="chiplist journey-layers jt-chips" aria-label="Layers">
+              <li data-layer="gov">Control</li>
+              <li data-layer="context">Context</li>
+            </ul>
+            <span class="jt-go">end to end &rarr;</span>
+          </a>
+        </div>
+      </section>
+
       <!-- ───────────────────── purpose / routing ───────────────────── -->
       <section class="routing" id="routing" aria-labelledby="routing-title">
         <div class="section-head">
-          <span class="section-no">02 / PURPOSE</span>
+          <span class="section-no">03 / PURPOSE</span>
           <h2 id="routing-title">Announcements in, samples out</h2>
           <p>
             The atlas is the index. This repo is the workshop: a public-safe
@@ -919,6 +1021,7 @@
       <nav class="foot-links" aria-label="Footer">
         <a href="index.html">Home</a>
         <a href="stack.html">Stack</a>
+        <a href="journeys.html">Journeys</a>
         <a href="samples.html">Samples</a>
         <a href="sources.html">Sources</a>
         <a

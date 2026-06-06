@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Journeys · Build 2026 AI Builder Atlas</title>
+    <meta
+      name="description"
+      content="Builder journeys: six end-to-end Build 2026 workflows that cut across the stack, each composed from existing sample tracks and demo narratives."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-field" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="masthead" aria-label="Site header">
+      <a class="repo-tag" href="index.html">
+        <span class="bm-mini" aria-hidden="true">BUILD</span>
+        <span class="path">microsoft&#8203;-build-2026</span>
+      </a>
+      <nav class="mast-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="stack.html">Stack</a>
+        <a href="journeys.html" aria-current="page">Journeys</a>
+        <a href="samples.html">Samples</a>
+        <a href="sources.html">Sources</a>
+      </nav>
+      <span class="mast-stamp">REFRESHED&nbsp;2026.06.06</span>
+    </header>
+
+    <main>
+      <section class="page-head" aria-labelledby="ph-title">
+        <p class="kicker reveal" data-d="0">
+          <span class="kicker-mark">◈</span> 03 / Builder Journeys
+        </p>
+        <h1 id="ph-title" class="reveal" data-d="1">
+          Six builds, read left to right
+        </h1>
+        <p class="lede reveal" data-d="2">
+          The stack reads top to bottom — layers you assemble. Journeys read the
+          other way: six end-to-end workflows that cut
+          <strong>across</strong> the stack, each composed from existing sample
+          tracks and demo narratives. The question they answer is simply —
+          <strong>what would I actually build, end to end?</strong>
+        </p>
+        <div class="ladder reveal" data-d="3" aria-label="Maturity legend">
+          <span class="rung">Narrative</span>
+          <span class="rung-arrow">→</span>
+          <span class="rung">Sketch</span>
+          <span class="rung-arrow">→</span>
+          <span class="rung">Runnable later</span>
+        </div>
+      </section>
+
+      <section class="journey-grid" aria-label="Builder journeys">
+        <!-- J1 -->
+        <article
+          class="journey-card j-build reveal-up"
+          id="journey-1"
+          aria-labelledby="j1-title"
+        >
+          <header class="journey-head">
+            <div class="journey-id">
+              <span class="journey-no">J1</span>
+              <h2 id="j1-title">Prompt-to-Production Agent</h2>
+            </div>
+            <span class="journey-badge" data-maturity="narrative"
+              >Narrative</span
+            >
+          </header>
+          <p class="journey-outcome">
+            <span class="jo-label">What you build</span>
+            A local agent prototype that ends up grounded, governed, evaluated,
+            and published — one continuous path from prompt to production.
+          </p>
+          <div
+            class="flow-rail"
+            role="list"
+            aria-label="Journey 1 stage flow, left to right"
+          >
+            <span class="flow-stage" role="listitem">Agent Framework</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">Foundry IQ</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">Toolboxes / MCP</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">Agent Service</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">Evals</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage flow-stage-end" role="listitem"
+              >Publish</span
+            >
+          </div>
+          <div class="journey-meta">
+            <div class="jm-row">
+              <span class="jm-key">Layers touched</span>
+              <ul class="chiplist journey-layers" aria-label="Layers touched">
+                <li data-layer="dev">Build</li>
+                <li data-layer="context">Context</li>
+                <li data-layer="tools">Tools</li>
+                <li data-layer="harness">Harness</li>
+                <li data-layer="gov">Control</li>
+              </ul>
+            </div>
+            <div class="jm-row">
+              <span class="jm-key">Composed from</span>
+              <span class="journey-samples">
+                <a class="sample-link" href="samples.html#track-01"
+                  >track-01 ↗</a
+                >
+                <a class="sample-link" href="samples.html#track-02"
+                  >track-02 ↗</a
+                >
+                <a class="sample-link" href="samples.html#track-05"
+                  >track-05 ↗</a
+                >
+              </span>
+            </div>
+            <div class="jm-row">
+              <span class="jm-key">Demo signal</span>
+              <a
+                class="sample-link"
+                href="https://github.com/ozgurgulerx/microsoft-build-2026/blob/main/demos/README.md"
+                target="_blank"
+                rel="noopener"
+                >Demo 1 · Prompt to Production ↗</a
+              >
+            </div>
+            <p class="journey-learn">
+              <span class="jm-key">What you learn</span>
+              How grounding, governed tools, and evals compose into one
+              shippable agent instead of four disconnected demos.
+            </p>
+            <p class="journey-convo">
+              <span class="jm-key">When you'd reach for this</span>
+              You have a working prototype and need the path that turns it into
+              something an enterprise will actually run.
+            </p>
+          </div>
+        </article>
+
+        <!-- J2 -->
+        <article
+          class="journey-card j-tools reveal-up"
+          id="journey-2"
+          aria-labelledby="j2-title"
+        >
+          <header class="journey-head">
+            <div class="journey-id">
+              <span class="journey-no">J2</span>
+              <h2 id="j2-title">Agentic Developer Workflow</h2>
+            </div>
+            <span class="journey-badge" data-maturity="sketch">Sketch</span>
+          </header>
+          <p class="journey-outcome">
+            <span class="jo-label">What you build</span>
+            An issue that becomes a reviewed, deployable change — the coding
+            agent drives the loop while you keep the gates.
+          </p>
+          <div
+            class="flow-rail"
+            role="list"
+            aria-label="Journey 2 stage flow, left to right"
+          >
+            <span class="flow-stage" role="listitem">GitHub Copilot app</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">Worktrees</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">Rayfin backend</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">PR review</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage flow-stage-end" role="listitem"
+              >Deploy</span
+            >
+          </div>
+          <div class="journey-meta">
+            <div class="jm-row">
+              <span class="jm-key">Layers touched</span>
+              <ul class="chiplist journey-layers" aria-label="Layers touched">
+                <li data-layer="dev">Build</li>
+                <li data-layer="tools">Tools</li>
+              </ul>
+            </div>
+            <div class="jm-row">
+              <span class="jm-key">Composed from</span>
+              <span class="journey-samples">
+                <a class="sample-link" href="samples.html#track-10"
+                  >track-10 ↗</a
+                >
+                <a class="sample-link" href="samples.html#track-08"
+                  >track-08 ↗</a
+                >
+              </span>
+            </div>
+            <div class="jm-row">
+              <span class="jm-key">Demo signal</span>
+              <a
+                class="sample-link"
+                href="https://github.com/ozgurgulerx/microsoft-build-2026/blob/main/demos/README.md"
+                target="_blank"
+                rel="noopener"
+                >Demo 6 · Prompt-to-Production Backend ↗</a
+              >
+            </div>
+            <p class="journey-learn">
+              <span class="jm-key">What you learn</span>
+              Where the human checkpoints sit in an agent-driven dev loop, and
+              how generated backends stay traceable.
+            </p>
+            <p class="journey-convo">
+              <span class="jm-key">When you'd reach for this</span>
+              You want coding agents to do more of the build without losing
+              review, rollback, or attribution.
+            </p>
+          </div>
+        </article>
+
+        <!-- J3 -->
+        <article
+          class="journey-card j-harness reveal-up"
+          id="journey-3"
+          aria-labelledby="j3-title"
+        >
+          <header class="journey-head">
+            <div class="journey-id">
+              <span class="journey-no">J3</span>
+              <h2 id="j3-title">Secure Local Agent</h2>
+            </div>
+            <span class="journey-badge" data-maturity="narrative"
+              >Narrative</span
+            >
+          </header>
+          <p class="journey-outcome">
+            <span class="jo-label">What you build</span>
+            An agent that runs on local / edge hardware under containment,
+            identity, and policy — then graduates to a managed Cloud PC.
+          </p>
+          <div
+            class="flow-rail"
+            role="list"
+            aria-label="Journey 3 stage flow, left to right"
+          >
+            <span class="flow-stage" role="listitem"
+              >Windows AI / Foundry Local</span
+            >
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">MXC containment</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">Identity attribution</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">Agent 365</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage flow-stage-end" role="listitem"
+              >Windows 365 for Agents</span
+            >
+          </div>
+          <div class="journey-meta">
+            <div class="jm-row">
+              <span class="jm-key">Layers touched</span>
+              <ul class="chiplist journey-layers" aria-label="Layers touched">
+                <li data-layer="harness">Harness</li>
+                <li data-layer="infra">Metal</li>
+                <li data-layer="gov">Control</li>
+              </ul>
+            </div>
+            <div class="jm-row">
+              <span class="jm-key">Composed from</span>
+              <span class="journey-samples">
+                <a class="sample-link" href="samples.html#track-09"
+                  >track-09 ↗</a
+                >
+                <a class="sample-link" href="samples.html#track-07"
+                  >track-07 ↗</a
+                >
+              </span>
+            </div>
+            <div class="jm-row">
+              <span class="jm-key">Demo signal</span>
+              <a
+                class="sample-link"
+                href="https://github.com/ozgurgulerx/microsoft-build-2026/blob/main/demos/README.md"
+                target="_blank"
+                rel="noopener"
+                >Demo 7 · Windows Local-Agent Harness ↗</a
+              >
+            </div>
+            <p class="journey-learn">
+              <span class="jm-key">What you learn</span>
+              How local execution gets bounded — sandboxing, attribution, and
+              audit — before it ever touches enterprise data.
+            </p>
+            <p class="journey-convo">
+              <span class="jm-key">When you'd reach for this</span>
+              You need an agent close to local files or devices, but with
+              enterprise containment and a path off the laptop.
+            </p>
+          </div>
+        </article>
+
+        <!-- J4 -->
+        <article
+          class="journey-card j-context reveal-up"
+          id="journey-4"
+          aria-labelledby="j4-title"
+        >
+          <header class="journey-head">
+            <div class="journey-id">
+              <span class="journey-no">J4</span>
+              <h2 id="j4-title">Governed Enterprise Action Plane</h2>
+            </div>
+            <span class="journey-badge" data-maturity="narrative"
+              >Narrative</span
+            >
+          </header>
+          <p class="journey-outcome">
+            <span class="jo-label">What you build</span>
+            Work knowledge plus governed connectors and a managed gateway that
+            turn an agent into something allowed to take action.
+          </p>
+          <div
+            class="flow-rail"
+            role="list"
+            aria-label="Journey 4 stage flow, left to right"
+          >
+            <span class="flow-stage" role="listitem">Work IQ</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">Logic Apps</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem"
+              >Connector Namespace / hosted MCP</span
+            >
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">APIM / API Center</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage flow-stage-end" role="listitem">Audit</span>
+          </div>
+          <div class="journey-meta">
+            <div class="jm-row">
+              <span class="jm-key">Layers touched</span>
+              <ul class="chiplist journey-layers" aria-label="Layers touched">
+                <li data-layer="context">Context</li>
+                <li data-layer="tools">Tools</li>
+                <li data-layer="gov">Control</li>
+              </ul>
+            </div>
+            <div class="jm-row">
+              <span class="jm-key">Composed from</span>
+              <span class="journey-samples">
+                <a class="sample-link" href="samples.html#track-03"
+                  >track-03 ↗</a
+                >
+                <a class="sample-link" href="samples.html#track-01"
+                  >track-01 ↗</a
+                >
+              </span>
+            </div>
+            <div class="jm-row">
+              <span class="jm-key">Demo signal</span>
+              <a
+                class="sample-link"
+                href="https://github.com/ozgurgulerx/microsoft-build-2026/blob/main/demos/README.md"
+                target="_blank"
+                rel="noopener"
+                >Demo 3 · Event-Driven Workstream Agent ↗</a
+              >
+            </div>
+            <p class="journey-learn">
+              <span class="jm-key">What you learn</span>
+              How actions get governed at the plane level — connectors, hosted
+              MCP, and an API gateway in front of every tool.
+            </p>
+            <p class="journey-convo">
+              <span class="jm-key">When you'd reach for this</span>
+              Your agent has to do real work across enterprise systems, and
+              every action needs a policy and an audit trail.
+            </p>
+          </div>
+        </article>
+
+        <!-- J5 -->
+        <article
+          class="journey-card j-eval reveal-up"
+          id="journey-5"
+          aria-labelledby="j5-title"
+        >
+          <header class="journey-head">
+            <div class="journey-id">
+              <span class="journey-no">J5</span>
+              <h2 id="j5-title">Safe Code Execution + Evaluation</h2>
+            </div>
+            <span class="journey-badge" data-maturity="sketch">Sketch</span>
+          </header>
+          <p class="journey-outcome">
+            <span class="jo-label">What you build</span>
+            Agent-written code that runs in a disposable sandbox, then gets
+            scored and watched — execution and evaluation as one loop.
+          </p>
+          <div
+            class="flow-rail"
+            role="list"
+            aria-label="Journey 5 stage flow, left to right"
+          >
+            <span class="flow-stage" role="listitem"
+              >Container Apps session sandbox</span
+            >
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">ASSERT</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">ACS</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">Rubric</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage flow-stage-end" role="listitem"
+              >Observability</span
+            >
+          </div>
+          <div class="journey-meta">
+            <div class="jm-row">
+              <span class="jm-key">Layers touched</span>
+              <ul class="chiplist journey-layers" aria-label="Layers touched">
+                <li data-layer="harness">Harness</li>
+                <li data-layer="gov">Control</li>
+              </ul>
+            </div>
+            <div class="jm-row">
+              <span class="jm-key">Composed from</span>
+              <span class="journey-samples">
+                <a class="sample-link" href="samples.html#track-04"
+                  >track-04 ↗</a
+                >
+                <a class="sample-link" href="samples.html#track-05"
+                  >track-05 ↗</a
+                >
+              </span>
+            </div>
+            <div class="jm-row">
+              <span class="jm-key">Demo signal</span>
+              <a
+                class="sample-link"
+                href="https://github.com/ozgurgulerx/microsoft-build-2026/blob/main/demos/README.md"
+                target="_blank"
+                rel="noopener"
+                >Demo 2 + Demo 4 · Safe Execution & Governance ↗</a
+              >
+            </div>
+            <p class="journey-learn">
+              <span class="jm-key">What you learn</span>
+              How sandboxed execution, policy specs, and rubric evals combine
+              into provable safety, not a demo that worked once.
+            </p>
+            <p class="journey-convo">
+              <span class="jm-key">When you'd reach for this</span>
+              You're letting an agent run code and need to show it was
+              contained, scored, and observable.
+            </p>
+          </div>
+        </article>
+
+        <!-- J6 -->
+        <article
+          class="journey-card j-research reveal-up"
+          id="journey-6"
+          aria-labelledby="j6-title"
+        >
+          <header class="journey-head">
+            <div class="journey-id">
+              <span class="journey-no">J6</span>
+              <h2 id="j6-title">Research / Evidence Agent</h2>
+            </div>
+            <span class="journey-badge" data-maturity="narrative"
+              >Narrative</span
+            >
+          </header>
+          <p class="journey-outcome">
+            <span class="jo-label">What you build</span>
+            A research agent that proposes, gathers evidence, and logs every
+            claim — with a human reviewer in the loop before handoff.
+          </p>
+          <div
+            class="flow-rail"
+            role="list"
+            aria-label="Journey 6 stage flow, left to right"
+          >
+            <span class="flow-stage" role="listitem">Microsoft Discovery</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">Hypothesis</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">Evidence loop</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage" role="listitem">Source registry</span>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <span class="flow-stage flow-stage-end" role="listitem"
+              >Reviewer checkpoint</span
+            >
+          </div>
+          <div class="journey-meta">
+            <div class="jm-row">
+              <span class="jm-key">Layers touched</span>
+              <ul class="chiplist journey-layers" aria-label="Layers touched">
+                <li data-layer="gov">Control</li>
+                <li data-layer="context">Context</li>
+              </ul>
+            </div>
+            <div class="jm-row">
+              <span class="jm-key">Composed from</span>
+              <span class="journey-samples">
+                <a class="sample-link" href="samples.html#track-11"
+                  >track-11 ↗</a
+                >
+              </span>
+            </div>
+            <div class="jm-row">
+              <span class="jm-key">Demo signal</span>
+              <a
+                class="sample-link"
+                href="https://github.com/ozgurgulerx/microsoft-build-2026/blob/main/demos/README.md"
+                target="_blank"
+                rel="noopener"
+                >Demo 8 · Discovery Research Workflow ↗</a
+              >
+            </div>
+            <p class="journey-learn">
+              <span class="jm-key">What you learn</span>
+              How an evidence-first agent keeps citations, uncertainty, and
+              reviewer checkpoints auditable end to end.
+            </p>
+            <p class="journey-convo">
+              <span class="jm-key">When you'd reach for this</span>
+              You want an agent for R&amp;D or analysis whose conclusions you
+              can trace back to sources and sign off on.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <nav class="foot-links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="stack.html">Stack</a>
+        <a href="journeys.html">Journeys</a>
+        <a href="samples.html">Samples</a>
+        <a href="sources.html">Sources</a>
+        <a
+          href="https://news.microsoft.com/build-2026/"
+          target="_blank"
+          rel="noopener"
+          >Build 2026 ↗</a
+        >
+      </nav>
+      <p class="foot-sig">
+        microsoft-build-2026 &middot; AI Builder Atlas &middot; built for the AI
+        builder
+      </p>
+      <p class="foot-by">
+        An independent interpretation by
+        <a
+          class="by-name"
+          href="https://github.com/ozgurgulerx"
+          target="_blank"
+          rel="noopener author"
+          >Özgür Güler</a
+        >
+        &middot; this page is not affiliated with Microsoft
+      </p>
+    </footer>
+
+    <script src="atlas.js" defer></script>
+  </body>
+</html>

@@ -29,6 +29,7 @@
       <nav class="mast-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="stack.html">Stack</a>
+        <a href="journeys.html">Journeys</a>
         <a href="samples.html" aria-current="page">Samples</a>
         <a href="sources.html">Sources</a>
       </nav>
@@ -57,6 +58,45 @@
           <span class="rung-arrow">→</span>
           <span class="rung">Governed reference</span>
         </div>
+        <div
+          class="sample-filter reveal"
+          data-d="4"
+          role="group"
+          aria-label="Filter samples by layer"
+        >
+          <button class="filter-chip" data-filter="all" aria-pressed="true">
+            All
+          </button>
+          <button class="filter-chip" data-filter="model" aria-pressed="false">
+            Model
+          </button>
+          <button
+            class="filter-chip"
+            data-filter="context"
+            aria-pressed="false"
+          >
+            Context
+          </button>
+          <button class="filter-chip" data-filter="tools" aria-pressed="false">
+            Tools
+          </button>
+          <button
+            class="filter-chip"
+            data-filter="harness"
+            aria-pressed="false"
+          >
+            Harness
+          </button>
+          <button class="filter-chip" data-filter="dev" aria-pressed="false">
+            Dev
+          </button>
+          <button class="filter-chip" data-filter="infra" aria-pressed="false">
+            Infra
+          </button>
+          <button class="filter-chip" data-filter="gov" aria-pressed="false">
+            Governance
+          </button>
+        </div>
       </section>
 
       <section class="sample-grid" aria-label="Sample tracks">
@@ -75,7 +115,11 @@
           </p>
           <footer>
             <span class="sample-layer" data-layer="tools">TOOLS</span>
-            <a class="sample-link" href="stack.html#tools">Layer ↗</a>
+            <span class="sample-links">
+              <a class="sample-jlink" href="journeys.html#journey-1">J1</a>
+              <a class="sample-jlink" href="journeys.html#journey-4">J4</a>
+              <a class="sample-link" href="stack.html#tools">Layer ↗</a>
+            </span>
           </footer>
         </article>
 
@@ -94,7 +138,10 @@
           </p>
           <footer>
             <span class="sample-layer" data-layer="context">CONTEXT</span>
-            <a class="sample-link" href="stack.html#context">Layer ↗</a>
+            <span class="sample-links">
+              <a class="sample-jlink" href="journeys.html#journey-1">J1</a>
+              <a class="sample-link" href="stack.html#context">Layer ↗</a>
+            </span>
           </footer>
         </article>
 
@@ -113,7 +160,10 @@
           </p>
           <footer>
             <span class="sample-layer" data-layer="harness">HARNESS</span>
-            <a class="sample-link" href="stack.html#harness">Layer ↗</a>
+            <span class="sample-links">
+              <a class="sample-jlink" href="journeys.html#journey-4">J4</a>
+              <a class="sample-link" href="stack.html#harness">Layer ↗</a>
+            </span>
           </footer>
         </article>
 
@@ -130,7 +180,10 @@
           </p>
           <footer>
             <span class="sample-layer" data-layer="harness">HARNESS</span>
-            <a class="sample-link" href="stack.html#harness">Layer ↗</a>
+            <span class="sample-links">
+              <a class="sample-jlink" href="journeys.html#journey-5">J5</a>
+              <a class="sample-link" href="stack.html#harness">Layer ↗</a>
+            </span>
           </footer>
         </article>
 
@@ -149,7 +202,11 @@
           </p>
           <footer>
             <span class="sample-layer" data-layer="gov">GOVERNANCE</span>
-            <a class="sample-link" href="stack.html#control">Layer ↗</a>
+            <span class="sample-links">
+              <a class="sample-jlink" href="journeys.html#journey-1">J1</a>
+              <a class="sample-jlink" href="journeys.html#journey-5">J5</a>
+              <a class="sample-link" href="stack.html#control">Layer ↗</a>
+            </span>
           </footer>
         </article>
 
@@ -187,7 +244,10 @@
           </p>
           <footer>
             <span class="sample-layer" data-layer="infra">INFRA</span>
-            <a class="sample-link" href="stack.html#metal">Layer ↗</a>
+            <span class="sample-links">
+              <a class="sample-jlink" href="journeys.html#journey-3">J3</a>
+              <a class="sample-link" href="stack.html#metal">Layer ↗</a>
+            </span>
           </footer>
         </article>
 
@@ -206,7 +266,10 @@
           </p>
           <footer>
             <span class="sample-layer" data-layer="dev">DEV</span>
-            <a class="sample-link" href="stack.html#build">Layer ↗</a>
+            <span class="sample-links">
+              <a class="sample-jlink" href="journeys.html#journey-2">J2</a>
+              <a class="sample-link" href="stack.html#build">Layer ↗</a>
+            </span>
           </footer>
         </article>
 
@@ -225,7 +288,10 @@
           </p>
           <footer>
             <span class="sample-layer" data-layer="harness">HARNESS</span>
-            <a class="sample-link" href="stack.html#harness">Layer ↗</a>
+            <span class="sample-links">
+              <a class="sample-jlink" href="journeys.html#journey-3">J3</a>
+              <a class="sample-link" href="stack.html#harness">Layer ↗</a>
+            </span>
           </footer>
         </article>
 
@@ -245,7 +311,10 @@
           </p>
           <footer>
             <span class="sample-layer" data-layer="tools">TOOLS</span>
-            <a class="sample-link" href="stack.html#tools">Layer ↗</a>
+            <span class="sample-links">
+              <a class="sample-jlink" href="journeys.html#journey-2">J2</a>
+              <a class="sample-link" href="stack.html#tools">Layer ↗</a>
+            </span>
           </footer>
         </article>
 
@@ -264,7 +333,10 @@
           </p>
           <footer>
             <span class="sample-layer" data-layer="gov">GOVERNANCE</span>
-            <a class="sample-link" href="stack.html#control">Layer ↗</a>
+            <span class="sample-links">
+              <a class="sample-jlink" href="journeys.html#journey-6">J6</a>
+              <a class="sample-link" href="stack.html#control">Layer ↗</a>
+            </span>
           </footer>
         </article>
 
@@ -286,6 +358,7 @@
       <nav class="foot-links" aria-label="Footer">
         <a href="index.html">Home</a>
         <a href="stack.html">Stack</a>
+        <a href="journeys.html">Journeys</a>
         <a href="samples.html">Samples</a>
         <a href="sources.html">Sources</a>
         <a
