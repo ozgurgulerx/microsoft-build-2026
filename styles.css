@@ -907,6 +907,14 @@ section {
 }
 .foot-by .by-name {
   color: var(--fog);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a.by-name:hover {
+  color: var(--chalk);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--fog-dim);
 }
 
 /* ───────────────────── motion ───────────────────── */
