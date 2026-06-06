@@ -11,13 +11,30 @@ if ! git check-ignore -q private; then
   exit 1
 fi
 
-tracked_artifacts="$(git ls-files 'private/*' '*.pptx' '*.ppt' '*.docx' '*.xlsx' '*.pdf')"
+tracked_artifacts="$(
+  git ls-files \
+    'private/*' \
+    '.playwright-cli/*' \
+    '.playwright-mcp/*' \
+    '*.pptx' \
+    '*.pptm' \
+    '*.ppt' \
+    '*.ppsx' \
+    '*.docx' \
+    '*.xlsx' \
+    '*.pdf' \
+    '*.log' \
+    '*-before.png' \
+    '*-after.png' \
+    '*-final*.png' \
+    'screenshot-*.png' \
+    'page-*.png'
+)"
 
 if [ -n "$tracked_artifacts" ]; then
-  echo "Refusing: private or binary artifacts are tracked:"
+  echo "Refusing: private, binary, or local debug artifacts are tracked:"
   echo "$tracked_artifacts"
   exit 1
 fi
 
 echo "Public boundary check passed."
-

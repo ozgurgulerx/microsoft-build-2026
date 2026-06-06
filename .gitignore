@@ -25,6 +25,15 @@ coverage/
 Thumbs.db
 *.log
 
+# Local browser/debug artifacts
+/.playwright-cli/
+/.playwright-mcp/
+/*-before.png
+/*-after.png
+/*-final*.png
+/screenshot-*.png
+/page-*.png
+
 # Office lock files and local binary references
 ~$*.pptx
 ~$*.docx

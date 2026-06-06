@@ -38,7 +38,6 @@ Before any push:
 
 1. Run `scripts/validate-public-boundary.sh`.
 2. Confirm `git status --short` does not show `private/`.
-3. Confirm no Office decks, PDFs, internal screenshots, or downloaded snapshots are tracked.
+3. Confirm no Office decks, PDFs, local browser debug artifacts, internal screenshots, or downloaded snapshots are tracked.
 4. Confirm README and docs use public links for public claims.
 5. Confirm sample code has no secrets and uses `.env.example` where needed.
-
