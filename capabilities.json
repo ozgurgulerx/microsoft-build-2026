@@ -7,8 +7,8 @@
       "layer": "gov",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/agent-service-build2026/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/runtime-components",
+      "sample": "https://github.com/Azure-Samples/azure-ai-agent-service-enterprise-demo"
     },
     {
       "id": "agent-service-hosted-agents",
@@ -16,15 +16,15 @@
       "layer": "gov",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/agent-service-build2026/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+      "sample": "https://github.com/Azure-Samples/azure-ai-agent-service-enterprise-demo"
     },
     {
       "id": "agent-service-routines",
       "label": "Agent Service Routines",
       "layer": "gov",
       "maturity": "L0",
-      "blog": null,
+      "blog": "https://devblogs.microsoft.com/foundry/agent-service-build2026/",
       "docs": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/routines",
       "sample": null
     },
@@ -34,7 +34,7 @@
       "layer": "gov",
       "maturity": "L2",
       "blog": "https://techcommunity.microsoft.com/blog/appsonazureblog/introducing-the-azure-functions-serverless-agents-runtime-preview/4523804",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/azure-functions",
       "sample": "samples/03-functions-serverless-agent/README.md"
     },
     {
@@ -42,8 +42,8 @@
       "label": "Azure Container Apps · Sandbox",
       "layer": "gov",
       "maturity": "L2",
-      "blog": null,
-      "docs": "https://learn.microsoft.com/azure/container-apps/sessions",
+      "blog": "https://techcommunity.microsoft.com/blog/appsonazureblog/introducing-azure-container-apps-sandboxes-secure-infrastructure-for-agentic-wor/4524131",
+      "docs": "https://learn.microsoft.com/en-us/azure/container-apps/sessions",
       "sample": "samples/04-container-apps-sandbox/README.md"
     },
     {
@@ -51,8 +51,8 @@
       "label": "Code Interpreter · Sandbox",
       "layer": "gov",
       "maturity": "L2",
-      "blog": null,
-      "docs": "https://learn.microsoft.com/azure/container-apps/sessions",
+      "blog": "https://techcommunity.microsoft.com/blog/appsonazureblog/introducing-azure-container-apps-sandboxes-secure-infrastructure-for-agentic-wor/4524131",
+      "docs": "https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter",
       "sample": "samples/04-container-apps-sandbox/README.md"
     },
     {
@@ -61,7 +61,7 @@
       "layer": "gov",
       "maturity": "L2",
       "blog": "https://blogs.windows.com/windowsdeveloper/2026/06/02/windows-platform-security-for-ai-agents/",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/windows/apps/develop/ai-assisted/security-and-responsible-ai",
       "sample": "samples/09-windows-local-agent-harness/README.md"
     },
     {
@@ -79,8 +79,8 @@
       "layer": "gov",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/agent-service-build2026/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+      "sample": "https://github.com/Azure-Samples/azure-ai-agent-service-enterprise-demo"
     },
     {
       "id": "agent-365",
@@ -88,7 +88,7 @@
       "layer": "gov",
       "maturity": "L0",
       "blog": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/microsoft-agent-365/",
       "sample": null
     },
     {
@@ -97,7 +97,7 @@
       "layer": "gov",
       "maturity": "L0",
       "blog": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/defender-xdr/security-for-ai/defender-security-for-ai",
       "sample": null
     },
     {
@@ -106,7 +106,7 @@
       "layer": "gov",
       "maturity": "L2",
       "blog": "https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework/",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/evaluate-agent",
       "sample": "samples/05-agentops-evals/README.md"
     },
     {
@@ -115,8 +115,8 @@
       "layer": "gov",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/evaluate-agent",
+      "sample": "samples/05-agentops-evals/README.md"
     },
     {
       "id": "rubric-agent-scoring",
@@ -124,8 +124,8 @@
       "layer": "gov",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/agent-framework/agents/evaluation",
+      "sample": "samples/05-agentops-evals/README.md"
     },
     {
       "id": "assert-open-source-agent-eval",
@@ -142,8 +142,8 @@
       "layer": "gov",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview",
+      "sample": "samples/05-agentops-evals/README.md"
     },
     {
       "id": "acs-agent-control-spec",
@@ -169,8 +169,8 @@
       "layer": "gov",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-client-side",
+      "sample": "samples/05-agentops-evals/README.md"
     },
     {
       "id": "tracing",
@@ -178,8 +178,8 @@
       "layer": "gov",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/observability/concepts/trace-data",
+      "sample": "samples/05-agentops-evals/README.md"
     },
     {
       "id": "roi-reporting",
@@ -187,8 +187,8 @@
       "layer": "gov",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/evaluate-agent",
+      "sample": "samples/05-agentops-evals/README.md"
     },
     {
       "id": "agent-inference-costs-finops",
@@ -196,8 +196,8 @@
       "layer": "gov",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/manage-costs",
+      "sample": "samples/05-agentops-evals/README.md"
     },
     {
       "id": "governed-distribution",
@@ -205,7 +205,7 @@
       "layer": "gov",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/agent-distribution-build2026/",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/publish",
       "sample": null
     },
     {
@@ -214,17 +214,17 @@
       "layer": "dev",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/agent-framework/overview/",
+      "sample": "https://github.com/microsoft/Agent-Framework-Samples"
     },
     {
       "id": "foundry-toolkit-for-vs-code",
       "label": "Foundry Toolkit for VS Code",
       "layer": "dev",
       "maturity": "L0",
-      "blog": "https://devblogs.microsoft.com/foundry/agent-service-build2026/",
+      "blog": "https://techcommunity.microsoft.com/blog/azuredevcommunityblog/foundry-toolkit-for-vs-code-at-build-hosted-agents-end-to-end-a-smarter-toolbox-/4524941",
       "docs": null,
-      "sample": null
+      "sample": "https://github.com/Azure-Samples/azure-ai-agent-service-enterprise-demo"
     },
     {
       "id": "agent-optimizer-trace-based-tuning",
@@ -232,8 +232,8 @@
       "layer": "dev",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/agent-optimizer-build2026/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/traces-to-dataset",
+      "sample": "samples/05-agentops-evals/README.md"
     },
     {
       "id": "rayfin-prompt-to-backend-cli",
@@ -242,7 +242,7 @@
       "maturity": "L2",
       "blog": "https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/",
       "docs": null,
-      "sample": "samples/08-prompt-to-production-backend/README.md"
+      "sample": "https://github.com/microsoft/rayfin"
     },
     {
       "id": "cosmos-db-mcp",
@@ -250,8 +250,8 @@
       "layer": "dev",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/cosmosdb/announced-at-ms-build-2026-azure-cosmos-db-mcp-toolkit-semantic-reranking-global-secondary-indexes-and-more/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/model-context-protocol-toolkit",
+      "sample": "https://github.com/AzureCosmosDB/azure-cosmos-mcp-server-samples"
     },
     {
       "id": "azure-functions-agents-mcp",
@@ -259,7 +259,7 @@
       "layer": "dev",
       "maturity": "L2",
       "blog": "https://techcommunity.microsoft.com/blog/appsonazureblog/azure-functions-at-build-2026-update/4524075",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-mcp",
       "sample": "samples/03-functions-serverless-agent/README.md"
     },
     {
@@ -267,9 +267,9 @@
       "label": "ACA Samples",
       "layer": "dev",
       "maturity": "L0",
-      "blog": null,
-      "docs": "https://learn.microsoft.com/azure/container-apps/sessions",
-      "sample": null
+      "blog": "https://techcommunity.microsoft.com/blog/appsonazureblog/introducing-azure-container-apps-sandboxes-secure-infrastructure-for-agentic-wor/4524131",
+      "docs": "https://learn.microsoft.com/en-us/azure/container-apps/sessions",
+      "sample": "https://github.com/Azure-Samples/container-apps-dynamic-sessions-samples"
     },
     {
       "id": "github-sdks-sandboxes",
@@ -277,8 +277,8 @@
       "layer": "dev",
       "maturity": "L0",
       "blog": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/",
-      "docs": null,
-      "sample": null
+      "docs": "https://docs.github.com/en/copilot/how-tos/github-copilot-app",
+      "sample": "https://github.com/github/copilot-sdk"
     },
     {
       "id": "windows-local-agent-loop",
@@ -286,7 +286,7 @@
       "layer": "dev",
       "maturity": "L2",
       "blog": "https://blogs.windows.com/windowsdeveloper/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/windows-365/agents/",
       "sample": "samples/09-windows-local-agent-harness/README.md"
     },
     {
@@ -295,8 +295,8 @@
       "layer": "model",
       "maturity": "L0",
       "blog": "https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai",
+      "sample": "samples/06-model-router-inference-substrate/README.md"
     },
     {
       "id": "fireworks-ai-on-foundry",
@@ -304,8 +304,8 @@
       "layer": "model",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-build-2026/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "sample": "samples/06-model-router-inference-substrate/README.md"
     },
     {
       "id": "managed-compute",
@@ -313,8 +313,8 @@
       "layer": "model",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/announcing-foundry-managed-compute/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/concepts/managed-compute-overview",
+      "sample": "samples/06-model-router-inference-substrate/README.md"
     },
     {
       "id": "frontier-tuning-managed-rl-fine-tuning",
@@ -331,8 +331,8 @@
       "layer": "model",
       "maturity": "L0",
       "blog": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/azure-speech-at-build-2026-powering-voice-agents-with-real-time-and-life-like-ex/4524638",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-quickstart",
+      "sample": "https://github.com/Azure-Samples/call-center-voice-agent-accelerator"
     },
     {
       "id": "foundry-local-on-azure-local",
@@ -340,7 +340,7 @@
       "layer": "model",
       "maturity": "L2",
       "blog": "https://devblogs.microsoft.com/foundry/accelerate-edge-ai-development-with-foundry-local/",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local",
       "sample": "samples/07-foundry-local-edge-agent/README.md"
     },
     {
@@ -349,8 +349,8 @@
       "layer": "model",
       "maturity": "L0",
       "blog": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/nvidia%E2%80%99s-open-models-on-microsoft-foundry/4501643",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "sample": "samples/06-model-router-inference-substrate/README.md"
     },
     {
       "id": "foundry-iq-enhancements",
@@ -358,7 +358,7 @@
       "layer": "context",
       "maturity": "L2",
       "blog": "https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq/",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/what-is-foundry-iq",
       "sample": "samples/02-foundry-iq-grounding/README.md"
     },
     {
@@ -366,9 +366,9 @@
       "label": "Web IQ · new grounding service",
       "layer": "context",
       "maturity": "L0",
-      "blog": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
-      "docs": null,
-      "sample": null
+      "blog": "https://blogs.bing.com/search/June-2026/Announcing-Microsoft-Web-IQ",
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/what-is-foundry-iq",
+      "sample": "samples/02-foundry-iq-grounding/README.md"
     },
     {
       "id": "work-iq",
@@ -376,8 +376,8 @@
       "layer": "context",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/microsoft365dev/work-iq-production-ready-intelligence-for-every-agent/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq/api-overview",
+      "sample": "https://github.com/microsoft/work-iq-samples"
     },
     {
       "id": "fabric-iq",
@@ -385,8 +385,8 @@
       "layer": "context",
       "maturity": "L0",
       "blog": "https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/fabric/iq/overview",
+      "sample": "https://github.com/microsoft/fabric-toolbox"
     },
     {
       "id": "microsoft-iq-scout",
@@ -394,7 +394,7 @@
       "layer": "context",
       "maturity": "L0",
       "blog": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/microsoft-iq/",
       "sample": null
     },
     {
@@ -402,9 +402,9 @@
       "label": "HorizonDB · PostgreSQL for AI",
       "layer": "context",
       "maturity": "L0",
-      "blog": "https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/",
-      "docs": null,
-      "sample": null
+      "blog": "https://techcommunity.microsoft.com/blog/adforpostgresql/azure-horizondb-enterprise-ready-postgres-engineered-for-the-ai-era/4524094",
+      "docs": "https://learn.microsoft.com/en-us/azure/horizondb/overview",
+      "sample": "samples/08-prompt-to-production-backend/README.md"
     },
     {
       "id": "graph-ontology-semantic-context",
@@ -412,8 +412,8 @@
       "layer": "context",
       "maturity": "L0",
       "blog": "https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/fabric/iq/ontology/overview",
+      "sample": "https://github.com/microsoft/fabric-toolbox"
     },
     {
       "id": "content-understanding",
@@ -421,8 +421,8 @@
       "layer": "context",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/whats-new-in-azure-content-understanding-at-build-2026/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview",
+      "sample": "https://github.com/Azure-Samples/azure-ai-content-understanding-python"
     },
     {
       "id": "service-memory",
@@ -430,8 +430,8 @@
       "layer": "context",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/agent-service-build2026/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/runtime-components",
+      "sample": "https://github.com/Azure-Samples/azure-ai-agent-service-enterprise-demo"
     },
     {
       "id": "foundry-toolboxes",
@@ -439,7 +439,7 @@
       "layer": "tools",
       "maturity": "L2",
       "blog": "https://devblogs.microsoft.com/foundry/toolbox-build-26/",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/tool-catalog",
       "sample": "samples/01-agent-framework-toolbox/README.md"
     },
     {
@@ -448,8 +448,8 @@
       "layer": "tools",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/toolbox-build-26/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/tool-catalog",
+      "sample": "samples/01-agent-framework-toolbox/README.md"
     },
     {
       "id": "skills",
@@ -457,8 +457,8 @@
       "layer": "tools",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/agent-service-build2026/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/use-microsoft-foundry-skill",
+      "sample": "samples/01-agent-framework-toolbox/README.md"
     },
     {
       "id": "mcp-tool-standard",
@@ -466,8 +466,8 @@
       "layer": "tools",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/agent-service-build2026/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/model-context-protocol",
+      "sample": "samples/01-agent-framework-toolbox/README.md"
     },
     {
       "id": "azure-functions-mcp",
@@ -475,7 +475,7 @@
       "layer": "tools",
       "maturity": "L2",
       "blog": "https://techcommunity.microsoft.com/blog/appsonazureblog/azure-functions-at-build-2026-update/4524075",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-mcp",
       "sample": "samples/03-functions-serverless-agent/README.md"
     },
     {
@@ -483,8 +483,8 @@
       "label": "Code Interpreter",
       "layer": "tools",
       "maturity": "L2",
-      "blog": null,
-      "docs": "https://learn.microsoft.com/azure/container-apps/sessions",
+      "blog": "https://techcommunity.microsoft.com/blog/appsonazureblog/introducing-azure-container-apps-sandboxes-secure-infrastructure-for-agentic-wor/4524131",
+      "docs": "https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter",
       "sample": "samples/04-container-apps-sandbox/README.md"
     },
     {
@@ -493,8 +493,8 @@
       "layer": "tools",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/toolbox-build-26/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/browser-automation",
+      "sample": "samples/01-agent-framework-toolbox/README.md"
     },
     {
       "id": "agent-framework-harness",
@@ -502,8 +502,8 @@
       "layer": "harness",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/agent-framework/overview/",
+      "sample": "https://github.com/microsoft/Agent-Framework-Samples"
     },
     {
       "id": "multi-agent-orchestration",
@@ -511,8 +511,8 @@
       "layer": "harness",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/agent-service-build2026/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/",
+      "sample": "https://github.com/microsoft/Agent-Framework-Samples"
     },
     {
       "id": "skills-memory-middleware",
@@ -520,8 +520,8 @@
       "layer": "harness",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/agent-service-build2026/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/agent-framework/agents/middleware/",
+      "sample": "https://github.com/microsoft/Agent-Framework-Samples"
     },
     {
       "id": "cobalt-200-vms",
@@ -538,7 +538,7 @@
       "layer": "infra",
       "maturity": "L0",
       "blog": "https://techcommunity.microsoft.com/blog/appsonazureblog/announcing-anyscale-on-azure-public-preview-powered-by-ray-on-aks/4523704",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/azure/anyscale-on-azure/",
       "sample": null
     },
     {
@@ -547,7 +547,7 @@
       "layer": "infra",
       "maturity": "L0",
       "blog": "https://news.microsoft.com/build-2026/",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb300-v6-series",
       "sample": null
     },
     {
@@ -556,8 +556,8 @@
       "layer": "infra",
       "maturity": "L0",
       "blog": "https://blogs.windows.com/windowsdeveloper/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/windows/ai/apis/",
+      "sample": "https://github.com/microsoft/ai-dev-gallery"
     },
     {
       "id": "majorana-2-quantum-chip",
@@ -565,7 +565,7 @@
       "layer": "infra",
       "maturity": "L0",
       "blog": "https://news.microsoft.com/build-2026/",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/azure/quantum/overview-azure-quantum",
       "sample": null
     },
     {
@@ -574,7 +574,7 @@
       "layer": "infra",
       "maturity": "L2",
       "blog": "https://devblogs.microsoft.com/foundry/accelerate-edge-ai-development-with-foundry-local/",
-      "docs": null,
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local",
       "sample": "samples/07-foundry-local-edge-agent/README.md"
     },
     {
@@ -582,9 +582,9 @@
       "label": "Secure sandbox execution",
       "layer": "infra",
       "maturity": "L0",
-      "blog": null,
-      "docs": "https://learn.microsoft.com/azure/container-apps/sessions",
-      "sample": null
+      "blog": "https://techcommunity.microsoft.com/blog/appsonazureblog/introducing-azure-container-apps-sandboxes-secure-infrastructure-for-agentic-wor/4524131",
+      "docs": "https://learn.microsoft.com/en-us/azure/container-apps/sessions",
+      "sample": "samples/04-container-apps-sandbox/README.md"
     },
     {
       "id": "managed-compute-gpus",
@@ -592,8 +592,8 @@
       "layer": "infra",
       "maturity": "L0",
       "blog": "https://devblogs.microsoft.com/foundry/announcing-foundry-managed-compute/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/azure/foundry/concepts/managed-compute-overview",
+      "sample": "samples/06-model-router-inference-substrate/README.md"
     },
     {
       "id": "windows-ai-apis",
@@ -601,8 +601,8 @@
       "layer": "infra",
       "maturity": "L0",
       "blog": "https://blogs.windows.com/windowsdeveloper/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/",
-      "docs": null,
-      "sample": null
+      "docs": "https://learn.microsoft.com/en-us/windows/ai/apis/",
+      "sample": "https://github.com/microsoft/ai-dev-gallery"
     }
   ]
 }

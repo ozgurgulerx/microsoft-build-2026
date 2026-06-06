@@ -2427,36 +2427,92 @@ a.by-name:hover {
   list-style: none;
   cursor: pointer;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* top-align the indicator when the label wraps */
   justify-content: space-between;
-  gap: 10px;
+  gap: 12px;
   padding: 9px 11px;
   font-size: 0.86rem;
+  color: var(--chalk);
+  transition: color 0.16s;
+}
+.cap-expand > summary:hover {
   color: var(--chalk);
 }
 .cap-expand > summary::-webkit-details-marker {
   display: none;
 }
+.cap-sum-label {
+  flex: 1;
+  min-width: 0;
+  line-height: 1.3;
+}
 .cap-expand[open] {
   border-left-color: var(--c, var(--violet));
   background: color-mix(in srgb, var(--c, var(--violet)) 9%, transparent);
 }
-.cap-count {
-  font-family: var(--mono);
-  font-size: 0.66rem;
-  color: var(--fog-dim);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 2px 8px;
-  transition: transform 0.2s;
+/* 3-slot availability preview: blog / docs / code */
+.cap-indicator {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 4px;
 }
-.cap-expand[open] .cap-count {
+.cap-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.cap-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition:
+    transform 0.16s,
+    box-shadow 0.16s;
+}
+.cap-dot.off {
+  border: 1px solid var(--fog-dim);
+  opacity: 0.5;
+}
+.cap-dot.off-blog {
+  border-color: color-mix(in srgb, var(--build-blue) 72%, var(--fog-dim));
+}
+.cap-dot.off-docs {
+  border-color: color-mix(in srgb, var(--build-green) 72%, var(--fog-dim));
+}
+.cap-dot.off-code {
+  border-color: color-mix(in srgb, var(--build-orange) 72%, var(--fog-dim));
+}
+.cap-dot.on-blog {
+  background: var(--build-blue);
+}
+.cap-dot.on-docs {
+  background: var(--build-green);
+}
+.cap-dot.on-code {
+  background: var(--build-orange);
+}
+.cap-expand:hover .cap-dot:not(.off) {
+  transform: scale(1.25);
+}
+.cap-chevron {
+  width: 11px;
+  height: 11px;
+  flex: none;
+  color: var(--fog-dim);
+  transition:
+    transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    color 0.22s;
+}
+.cap-expand[open] .cap-chevron {
+  transform: rotate(180deg);
   color: var(--c, var(--violet));
-  transform: rotate(0);
 }
 .cap-expand-panel {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 2px 11px 12px;
+  padding: 4px 11px 12px;
 }

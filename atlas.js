@@ -332,6 +332,10 @@
       .then((data) => {
         const map = {};
         (data.capabilities || []).forEach((c) => (map[norm(c.label)] = c));
+        const CHEVRON =
+          '<svg class="cap-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>';
+        const dot = (kind, on, has) =>
+          `<span class="cap-dot ${on ? "on-" + kind : "off off-" + kind}" title="${has} ${on ? "" : "· soon"}"></span>`;
         document.querySelectorAll(".cap-list > li").forEach((li) => {
           const a = li.querySelector(":scope > a");
           if (!a) return;
@@ -339,14 +343,15 @@
           const label = span ? span.textContent.trim() : "";
           const entry = map[norm(label)];
           if (!entry) return;
-          const count = [entry.blog, entry.docs, entry.sample].filter(
-            Boolean,
-          ).length;
-          if (count < 2) return; // simple blog-only rows stay plain links
+          const dots =
+            dot("blog", entry.blog, "Blog") +
+            dot("docs", entry.docs, "Docs") +
+            dot("code", entry.sample, "Code");
           const d = document.createElement("details");
           d.className = "cap-expand";
           d.innerHTML =
-            `<summary><span>${esc(label)}</span><span class="cap-count">${count} &#8964;</span></summary>` +
+            `<summary><span class="cap-sum-label">${esc(label)}</span>` +
+            `<span class="cap-indicator"><span class="cap-dots">${dots}</span>${CHEVRON}</span></summary>` +
             `<div class="cap-expand-panel">${assetsHTML(entry)}</div>`;
           li.replaceChildren(d);
         });
