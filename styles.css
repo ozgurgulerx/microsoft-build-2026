@@ -1016,16 +1016,25 @@ section {
   letter-spacing: 0.04em;
   color: var(--fog-dim);
 }
-.foot-by .by-name {
+.foot-feedback {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 4px 10px;
+  border: 1px solid rgba(174, 238, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(174, 238, 255, 0.06);
   color: var(--fog);
   text-decoration: none;
-  transition: color 0.2s;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background 0.2s;
 }
-a.by-name:hover {
+.foot-feedback:hover {
+  border-color: rgba(174, 238, 255, 0.42);
+  background: rgba(174, 238, 255, 0.1);
   color: var(--chalk);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-color: var(--fog-dim);
 }
 
 /* ───────────────────── enhancements ───────────────────── */
